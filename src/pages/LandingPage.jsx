@@ -1,15 +1,17 @@
 import React from "react";
-import { OutlineButton, RaisedButton } from "../components/Button/Button";
+import PasseiosSection from "./content/Passeios/Passeios";
+import ExploreSection from "./content/Explore/Explore";
+
+
 
 
 const LandingPage = () => (
-  <>
     <div className="container">
       <h1>Landing</h1>
-      <OutlineButton>Outline</OutlineButton>
-      <RaisedButton>RAISED</RaisedButton>
+      <PasseiosSection></PasseiosSection>
+      <ExploreSection></ExploreSection>
     </div>
-  </>
+
 )
 
 export default LandingPage;
