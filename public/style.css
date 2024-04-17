@@ -6,11 +6,14 @@
   /* CSS HSL */
   /* https://coolors.co/ */
 
-  --primaria: hsla(210, 67%, 43%, 1);
-  --background: hsla(108, 22%, 87%, 1);
-  --secundaria: hsla(34, 100%, 50%, 1);
-  --destaque: hsla(355, 78%, 56%, 1);
-  --detalhe: hsla(9, 63%, 45%, 1);
+  --primaria: #2734A7;
+  --secundaria: #4F5BCA;
+  --destaque: #1B257D;
+  --contrast: #000000;
+  --neutral: #ffffff;
+  
+  --background: #ffffff;
+
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);
@@ -20,7 +23,7 @@
   --detalhe:hsla(241, 96%, 72%, 1);*/
 }
 
-/* borda vermelha em todos os elementos para debug */
+/* borda vermelha rem todos os elrementos para debug */
 /*
 * {
   outline: red solid 1px;
@@ -33,5 +36,30 @@ body,html {
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: var(--background);
-  color:var(--primaria);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+}
+
+
+h2 {
+  font-size: 1.6rem; 
+}
+
+
+h3 {
+  font-size: 1.4rem; 
+}
+
+
+p {
+  font-size: 1.2rem; 
+  margin-bottom: 1rem; 
+  letter-spacing: .1rem;
 }
