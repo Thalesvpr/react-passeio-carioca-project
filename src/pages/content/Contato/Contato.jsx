@@ -14,3 +14,5 @@ export const ContatoSection = () => (
     </SectionBase>
 
 )
+
+export default ContatoSection;
