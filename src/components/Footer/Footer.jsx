@@ -9,6 +9,7 @@ const Footer = () => (
    <div className="content">
     <div className="content-socials">
         <div className="socials-links">
+        <div className="boxlinks"></div>
         <a>Instagram</a>
         </div>
         <div className="socials-links">

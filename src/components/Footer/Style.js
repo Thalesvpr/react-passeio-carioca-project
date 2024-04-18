@@ -6,19 +6,19 @@ const FooterStyled = styled.article`
     background-color: var(--primaria);
     z-index: 10;
     div.content-socials{
-        color: black;
-        background-color: yellow;
+        color: white;
+       
     }
     div.nav{
         display: flex;
-        background-color: green;
+        
     }
     div.socials-links{
-        background-color:pink;
         margin: 10px;
+        
     }
     div.content{
-        background-color: grey;
+        background-color: var(--primaria);
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -27,11 +27,16 @@ const FooterStyled = styled.article`
     }
     div.box{
         height: 100px;
-        background-color: purple;
+        background-color: white;
+        border-radius: 16px;
+        margin-bottom: 20px;
     }
     div.content-downloadlogo{
-        background-color: blue;
         margin: 10px;
+        
+    }
+    div.boxlinks{
+        background-color: white;
     }
         
 `
