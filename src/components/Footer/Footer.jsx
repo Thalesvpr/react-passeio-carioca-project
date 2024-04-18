@@ -7,6 +7,7 @@ import { OutlineButton, SecondLineButton } from "../Button/Button";
 const Footer = () => (
    <FooterStyled>
    <div className="content">
+    <div className="content-marcadaguasocials">
     <div className="content-marcadagua">
         <div className="marcadagua"></div>
        <div className="text">
@@ -24,6 +25,7 @@ const Footer = () => (
         <div className="boxlinks"></div>
         <a>Instagram</a>
         </div>
+    </div>
         
     </div>
         <div className="content-downloadlogo">

@@ -65,7 +65,11 @@ const FooterStyled = styled.article`
         display: flex ;
         flex-direction: column;
     }
-        
+    div.content-marcadaguasocials{
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+    }
         
 
         
