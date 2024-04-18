@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 const StyledSectionBase = styled.article`
-height: 980px;
-overflow: hidden;
-`
+height: 700px;
+overflow: hidden;`
 
 
 export {StyledSectionBase}

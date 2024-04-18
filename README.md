@@ -1,3 +1,8 @@
+## Links: 
+- [Repositório Documentação](https://github.com/Thalesvpr/Proj-FrontEnd-PasseioCarioca-2024.1.git)
+- [Trello](https://trello.com/b/xbshb3tV/inovatech)
+
+          
 # React Base Project
 
 Esse é um projeto de uma aplicação base usando React e Firebase construído com motivações didáticas.
@@ -25,3 +30,4 @@ O comando de execução local do projeto de ver executado no diretório raiz e d
 ## Versão de Produção
 
 Utilize o comando `npm run build` para construir uma versão pronta para produção. Os arquivos dessa versão estarão disponíveis na pasta *build*.
+
