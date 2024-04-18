@@ -9,7 +9,7 @@ const LandingPage = () => (
     <div className="container">
       <h1>Landing</h1>
       <PasseiosSection></PasseiosSection>
-      <ExploreSection></ExploreSection>
+      {/* <ExploreSection></ExploreSection> */}
     </div>
 
 )
