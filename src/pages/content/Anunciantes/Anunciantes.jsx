@@ -23,6 +23,7 @@ const AnunciantesSection = () => (
                 </div>
             </div>
             <div className="content-table">
+                <p className="tabela">Tabela de Planos</p>
 
             </div>
 
