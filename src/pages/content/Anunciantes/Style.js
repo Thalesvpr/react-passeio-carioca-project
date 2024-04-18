@@ -49,6 +49,10 @@ div.content-table{
     background-color: var(--secundaria);
     border-radius: 30px;
 }
+p.tabela{
+    color: var(--primaria);
+    padding-left: 30px;
+}
 `
 
 
