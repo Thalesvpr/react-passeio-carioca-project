@@ -62,7 +62,8 @@ const FooterStyled = styled.article`
         margin-right: 10px;
     }
     div.text{
-        display: block;
+        display: flex ;
+        flex-direction: column;
     }
         
         
