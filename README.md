@@ -1,6 +1,6 @@
 ## Links: 
-[Repositório Documentação](https://github.com/Thalesvpr/Proj-FrontEnd-PasseioCarioca-2024.1.git)
-[Trello](https://trello.com/b/xbshb3tV/inovatech)
+- [Repositório Documentação](https://github.com/Thalesvpr/Proj-FrontEnd-PasseioCarioca-2024.1.git)
+- [Trello](https://trello.com/b/xbshb3tV/inovatech)
 
           
 # React Base Project
