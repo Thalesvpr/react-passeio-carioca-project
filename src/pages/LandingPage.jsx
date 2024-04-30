@@ -5,6 +5,7 @@ import ExploreSection from "./content/Explore/Explore";
 import ContatoSection from "./content/Contato/Contato";
 import PasseiosSection from './content/Passeios/Passeios';
 import AnunciantesSection from './content/Anunciantes/Anunciantes';
+import GameficacaoSection from "./content/Gameficacao/Gameficacao";
 
 
 
@@ -20,6 +21,7 @@ const LandingPage = () => (
       <ContatoSection></ContatoSection>
       <AnunciantesSection></AnunciantesSection>
       <PasseiosSection></PasseiosSection>
+      <GameficacaoSection></GameficacaoSection>
 
       <Footer></Footer> 
     </div>

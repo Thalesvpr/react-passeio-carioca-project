@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-const ContatoSectionStyled = styled.article`
+
+const GameficacaoSectionStyled = styled.article`
 
 div.section-content {display: flex;
     color: var(--neutral);
@@ -11,15 +12,15 @@ div.section-content {display: flex;
     border-radius: 20px;
 }
 
-div.content-form{
+div.content-text{
 display: inline;
 width: 420px;
 height: 500px;
-background-color: transparent;
+background-color: red;
     h1{
         font-size: 48px;
     }
 
 }
 `
-export {ContatoSectionStyled};
+export {GameficacaoSectionStyled};

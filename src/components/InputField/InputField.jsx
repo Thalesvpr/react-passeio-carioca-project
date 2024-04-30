@@ -4,11 +4,9 @@ import {InputFieldStyled} from "./Style";
 export const InputField = (props) => {
     return (
     <InputFieldStyled>
-        <h1>
+        <p>
             {props.titulo}
-
-
-        </h1>
+        </p>
         <input
 
             type = "text"
