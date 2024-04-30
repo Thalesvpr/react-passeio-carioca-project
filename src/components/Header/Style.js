@@ -20,8 +20,8 @@ const HeaderStyled = styled.article`
     h1{
         color: white;
         padding-left: 65px;
-       
     }
+
 `
 
 

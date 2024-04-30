@@ -16,6 +16,8 @@ div.section-content{
     color: var(--neutral);
     display: flex;
     justify-content: space-between;
+    padding: 100px;
+
     
 }
 
@@ -48,6 +50,10 @@ div.content-table{
     width: 720px;
     background-color: var(--secundaria);
     border-radius: 30px;
+}
+p.tabela{
+    color: var(--primaria);
+    padding-left: 30px;
 }
 `
 

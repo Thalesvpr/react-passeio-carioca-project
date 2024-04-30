@@ -7,13 +7,25 @@ import { OutlineButton, SecondLineButton } from "../Button/Button";
 const Footer = () => (
    <FooterStyled>
    <div className="content">
+    <div className="content-marcadaguasocials">
+    <div className="content-marcadagua">
+        <div className="marcadagua"></div>
+       <div className="text">
+
+        <text>Passeio</text>
+        <text>Carioca</text>
+       </div>
+    </div>
     <div className="content-socials">
         <div className="socials-links">
+        <div className="boxlinks"></div>
         <a>Instagram</a>
         </div>
         <div className="socials-links">
+        <div className="boxlinks"></div>
         <a>Instagram</a>
         </div>
+    </div>
         
     </div>
         <div className="content-downloadlogo">
