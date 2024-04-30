@@ -16,6 +16,8 @@ div.section-content{
     color: var(--neutral);
     display: flex;
     justify-content: space-between;
+    padding: 100px;
+
     
 }
 
