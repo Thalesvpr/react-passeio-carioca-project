@@ -9,7 +9,7 @@ export const GameficacaoSection = () => (
             <div className="section-content">
         <div className="content-text">
             <p>
-                CAAraolho
+                
             </p>
         </div>
     </div>

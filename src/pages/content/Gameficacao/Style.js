@@ -16,7 +16,7 @@ div.content-text{
 display: inline;
 width: 420px;
 height: 500px;
-background-color: red;
+background-color: var(--primaria);
     h1{
         font-size: 48px;
     }
