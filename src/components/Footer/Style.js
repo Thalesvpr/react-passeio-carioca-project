@@ -23,7 +23,7 @@ const FooterStyled = styled.article`
         
     div.content{
         background-color: var(--primaria);
-        height: 600px;
+        height: 150px;
         display: flex;
         justify-content: space-between;
         padding: 50px;
