@@ -18,7 +18,7 @@ const FooterStyled = styled.article`
         margin: 10px;
         display: flex;
         align-items: center;
-        padding-inline: 50px;
+        
     }
         
     div.content{
@@ -26,8 +26,9 @@ const FooterStyled = styled.article`
         height: 150px;
         display: flex;
         justify-content: space-between;
-        padding: 50px;
+        padding-inline: 90px;
         align-items: center;
+        padding-block-start: 60px;
     }
     div.box{
         height: 100px;
@@ -50,7 +51,7 @@ const FooterStyled = styled.article`
         color: var(--neutral);
         display: flex;
         align-items: center;
-        padding-inline: 50px;
+        padding-inline: 10px;
         margin-bottom: 10px;
     }
     div.marcadagua{
@@ -58,8 +59,8 @@ const FooterStyled = styled.article`
         height: 48px;
         width: 48px;
         border-radius: 13px;
-        display: flex;
         margin-right: 10px;
+        
     }
     div.text{
         display: flex ;
@@ -68,7 +69,8 @@ const FooterStyled = styled.article`
     div.content-marcadaguasocials{
         align-items: center;
         flex-direction: column;
-        margin: 50px;
+        display: flex;
+        
     }
         
 
