@@ -3,15 +3,14 @@ import { GameficacaoSectionStyled } from "./Style";
 import { InputField } from './../../../components/InputField/InputField';
 import { SecondLineButtonStyled } from "../../../components/Button/Style";
 import { SecondLineButton } from "../../../components/Button/Button";
-import Slider from "react-slick";
+import Carrousel from "../../../components/Carrousel/Carrousel";
 
 export const GameficacaoSection = () => (
     <GameficacaoSectionStyled>
         <div className="section-content">
             <div className="content-text">
                 <div>
-                    <Slider/>
-                
+                    <Carrousel/>
                 </div>
             </div>
         </div>

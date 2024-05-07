@@ -1,10 +1,8 @@
 
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
-function Slider() {
+function Carrousel() {
     const settings = {
         dots: true,
         infinite: true,
@@ -39,4 +37,4 @@ function Slider() {
     )
 }
 
-export default Slider
+export default Carrousel
