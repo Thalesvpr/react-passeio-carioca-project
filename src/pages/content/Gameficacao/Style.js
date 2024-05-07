@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const GameficacaoSectionStyled = styled.article`
 
+
 div.section-content {display: flex;
     color: var(--neutral);
     background-color: var(--secundaria);
@@ -23,4 +24,5 @@ background-color: var(--primaria);
 
 }
 `
+
 export {GameficacaoSectionStyled};
