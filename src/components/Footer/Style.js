@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
+
 const FooterStyled = styled.article`
     height: 300px;
     width: 100%;
-    background-color: var(--primaria);
+    
+    
     z-index: 10;
     div.content-socials{
         color: white;
         
-       
+        
     }
     div.nav{
         display: flex;
@@ -20,15 +22,18 @@ const FooterStyled = styled.article`
         align-items: center;
         
     }
-        
+    
     div.content{
-        background-color: var(--primaria);
-        height: 150px;
+        
+        background-image: url("/imagens/svg/footerbg.png");
+        background-size: cover;
+        height: 100%;
         display: flex;
-        justify-content: space-between;
-        padding-inline: 90px;
-        align-items: center;
-        padding-block-start: 60px;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-bottom: 90px;
+        
+        
     }
     div.box{
         height: 100px;
@@ -51,12 +56,11 @@ const FooterStyled = styled.article`
         color: var(--neutral);
         display: flex;
         align-items: center;
-        padding-inline: 10px;
-        margin-bottom: 10px;
+        padding-right: 20px;
+        margin-bottom: 40px;
     }
     div.marcadagua{
-        background-color: var(--neutral);
-        height: 48px;
+        font-size: 40px;
         width: 48px;
         border-radius: 13px;
         margin-right: 10px;
