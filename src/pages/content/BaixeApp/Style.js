@@ -2,9 +2,14 @@ import styled from "styled-components"
 
 const BaixeAppSectionStyled = styled.article`
 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
 height: 100%;
-background-color: var(--destaque);
-border-radius: 0px 0px 150px 150px;
+
+padding-inline: 100px;
+color: var(--neutral)
 `
 
 
