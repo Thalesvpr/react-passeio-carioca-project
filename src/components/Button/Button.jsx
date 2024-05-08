@@ -1,29 +1,40 @@
-import { OutlineButtonStyled, SecondLineButtonStyled, ThirdLineButtonStyled } from "./Style";
+import { ModalStyled } from "../Modal/ModalStyled";
+
+
+import {
+  OutlineButtonStyled,
+  SecondLineButtonStyled,
+  ThirdLineButtonStyled,
+} from "./Style";
 
 export const OutlineButton = (props) => {
-    return (
+  return (
     <OutlineButtonStyled>
-        <button>{props.children}</button>
+      <button>{props.children}</button>
     </OutlineButtonStyled>
-
-  );   
+  );
 };
 
 export const SecondLineButton = (props) => {
-    return (
-    <SecondLineButtonStyled>
-        <button>{props.children}</button>
-    </SecondLineButtonStyled>
+  const handleClick = () => {
+    if (props.onClick) {
+      props.onClick();
+    }
+  };
 
-  );   
+  return (
+    <SecondLineButtonStyled>
+      <button onClick={handleClick}>{props.children}</button>
+    </SecondLineButtonStyled>
+  );
+
+
 };
 
 export const ThirdLineButton = (props) => {
-    return (
+  return (
     <ThirdLineButtonStyled>
-        <button>{props.children}</button>
+      <button>{props.children}</button>
     </ThirdLineButtonStyled>
-
-  );   
+  );
 };
-

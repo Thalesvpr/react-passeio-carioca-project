@@ -1,58 +1,55 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-function Carrousel() {
-  let sliderRef = useRef(null);
+function Carrousel({ slides, showDots, infinite, slideSpeed, slidesToShow, slidesToScroll, prevButtonLabel, nextButtonLabel }) {
+  const sliderRef = useRef(null);
+
   const next = () => {
-    sliderRef.slickNext();
+    sliderRef.current.slickNext();
   };
+
   const previous = () => {
-    sliderRef.slickPrev();
+    sliderRef.current.slickPrev();
   };
+
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    dots: showDots,
+    infinite: infinite,
+    speed: slideSpeed,
+    slidesToShow: slidesToShow,
+    slidesToScroll: slidesToScroll
   };
+
   return (
     <div className="slider-container">
-      <Slider
-        ref={slider => {
-          sliderRef = slider;
-        }}
-        {...settings}
-      >
-        <div key={1}>
-          <h3>1</h3>
-        </div>
-        <div key={2}>
-          <h3>2</h3>
-        </div>
-        <div key={3}>
-          <h3>3</h3>
-        </div>
-        <div key={4}>
-          <h3>4</h3>
-        </div>
-        <div key={5}>
-          <h3>5</h3>
-        </div>
-        <div key={6}>
-          <h3>6</h3>
-        </div>
+      <Slider ref={sliderRef} {...settings}>
+        {slides.map((slide, index) => (
+          <div key={index}>
+            <h3>{slide}</h3>
+          </div>
+        ))}
       </Slider>
       <div style={{ textAlign: "center" }}>
         <button className="button" onClick={previous}>
-          Previous
+          {prevButtonLabel}
         </button>
         <button className="button" onClick={next}>
-          Next
+          {nextButtonLabel}
         </button>
       </div>
     </div>
   );
 }
+
+Carrousel.defaultProps = {
+  slides: [],
+  showDots: true,
+  infinite: true,
+  slideSpeed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevButtonLabel: "Previous",
+  nextButtonLabel: "Next"
+};
 
 export default Carrousel;
