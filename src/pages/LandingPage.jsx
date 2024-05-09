@@ -7,13 +7,13 @@ import PasseiosSection from './content/Passeios/Passeios';
 import BaixeAppSection from "./content/BaixeApp/BaixeApp";
 import HeroSection from "./content/Hero/Hero";
 import GameficacaoSection from "./content/Gameficacao/Gameficacao";
-<<<<<<< HEAD
+
 import { LandingStyled } from "./Style";
-=======
+
 import AnunciantesGuiaSection from "./content/AnunciantesGuias/AnunciantesGuia";
 
 
->>>>>>> f42d6dc180de61169d368b54d56d40ef692de2b7
+
 
 
 
@@ -33,12 +33,12 @@ const LandingPage = () => (
       <PasseiosSection></PasseiosSection>
       <GameficacaoSection></GameficacaoSection>
       <Footer></Footer> 
-<<<<<<< HEAD
+
     </LandingStyled>
-=======
+
       
-    </div>
->>>>>>> f42d6dc180de61169d368b54d56d40ef692de2b7
+    
+
 
 )
 
