@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
+import { CarrouselStyled } from "./Style";
 
 function Carrousel(props) {
   const sliderRef = useRef(null);
@@ -16,11 +17,14 @@ const slides = props.slides
 console.log (slides)
 
   return (
+  <CarrouselStyled>
+
     <div className="slider-container">
       <Slider ref={sliderRef} {...props.settings}>
+      
       {slides.map((slide, index) => (
         <div key={index} className="slide">
-            <h3>{slide}</h3>
+            <div className="slide-content">{index}</div>
         </div>
         ))}
       </Slider>
@@ -33,6 +37,7 @@ console.log (slides)
         </button>
       </div>
     </div>
+        </CarrouselStyled>
   );
 }
 
