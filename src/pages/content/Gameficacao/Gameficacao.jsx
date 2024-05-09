@@ -10,7 +10,7 @@ export const GameficacaoSection = () => (
         <div className="section-content">
             <div className="content-text">
                 <div>
-                    <Carrousel/>
+                    
                 </div>
             </div>
         </div>

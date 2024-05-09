@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
-function Carrousel({ slides, showDots, infinite, slideSpeed, slidesToShow, slidesToScroll, prevButtonLabel, nextButtonLabel }) {
+function Carrousel(props) {
   const sliderRef = useRef(null);
 
   const next = () => {
@@ -12,44 +12,28 @@ function Carrousel({ slides, showDots, infinite, slideSpeed, slidesToShow, slide
     sliderRef.current.slickPrev();
   };
 
-  const settings = {
-    dots: showDots,
-    infinite: infinite,
-    speed: slideSpeed,
-    slidesToShow: slidesToShow,
-    slidesToScroll: slidesToScroll
-  };
+const slides = props.slides
+console.log (slides)
 
   return (
     <div className="slider-container">
-      <Slider ref={sliderRef} {...settings}>
-        {slides.map((slide, index) => (
-          <div key={index}>
+      <Slider ref={sliderRef} {...props.settings}>
+      {slides.map((slide, index) => (
+        <div key={index} className="slide">
             <h3>{slide}</h3>
-          </div>
+        </div>
         ))}
       </Slider>
       <div style={{ textAlign: "center" }}>
         <button className="button" onClick={previous}>
-          {prevButtonLabel}
+          {props.prevButtonLabel}
         </button>
         <button className="button" onClick={next}>
-          {nextButtonLabel}
+          {props.nextButtonLabel}
         </button>
       </div>
     </div>
   );
 }
-
-Carrousel.defaultProps = {
-  slides: [],
-  showDots: true,
-  infinite: true,
-  slideSpeed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  prevButtonLabel: "Previous",
-  nextButtonLabel: "Next"
-};
 
 export default Carrousel;
