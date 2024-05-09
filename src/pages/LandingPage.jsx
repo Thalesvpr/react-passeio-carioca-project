@@ -15,11 +15,6 @@ import AnunciantesGuiaSection from "./content/AnunciantesGuias/AnunciantesGuia";
 
 
 
-
-
-
-
-
 const LandingPage = () => (
     <LandingStyled>
       <Header></Header>
@@ -27,11 +22,12 @@ const LandingPage = () => (
       <HeroSection></HeroSection>
       <BaixeAppSection></BaixeAppSection>
       </div>
+      <GameficacaoSection></GameficacaoSection>
       <ExploreSection></ExploreSection>
       <ContatoSection></ContatoSection>
       <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <PasseiosSection></PasseiosSection>
-      <GameficacaoSection></GameficacaoSection>
+      
       <Footer></Footer> 
 
     </LandingStyled>
