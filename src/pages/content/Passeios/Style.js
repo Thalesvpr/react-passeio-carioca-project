@@ -9,8 +9,6 @@ justify-content: center;
 div.slider{
     width: 1000px;
     height: 450px;
-    background-color: var(--primaria);
-    border-radius: 30px
 }
 `
 export {PasseiosSectionStyled}
