@@ -14,6 +14,8 @@ const AnunciantesGuiaSectionStyled = styled.article`
     background-color: var(--primaria);
     color: var(--neutral);
     display: flex;
+    
+    
   }
 
   div.content-anunciante-cta {
@@ -63,6 +65,7 @@ const AnunciantesGuiaSectionStyled = styled.article`
     display: flex;
     justify-content: flex-end;
     margin-right: 220px;
+    position: relative;
   }
 
   div.content-guia-cta {
@@ -91,6 +94,28 @@ const AnunciantesGuiaSectionStyled = styled.article`
   div.content-guia-button {
     padding-top: 80px;
   }
+   div.div-anun {
+    background: white;
+     
+   }
+
+   div.guia-modal{
+    
+    position: fixed; /* Define a posição da div como fixa */
+    background: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 13px;
+    top: 50%; /* Coloca a div a meio caminho do topo da tela */
+    left: 50%; /* Coloca a div a meio caminho da esquerda da tela */
+    transform: translate(-50%, -50%); /* Move a div de volta metade de sua largura e altura */
+    z-index: 999; /* Define a ordem de empilhamento */
+    
+    
+   }
+  
+   
+
 `;
 
 export { AnunciantesGuiaSectionStyled };

@@ -1,4 +1,4 @@
-import { ModalStyled } from "../Modal/ModalStyled";
+import { ModalStyled } from "../Modal/Style";
 
 
 import {

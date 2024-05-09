@@ -3,6 +3,7 @@ import { SecondLineButton } from "../../../components/Button/Button";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { AnunciantesGuiaSectionStyled } from "./Style"; 
 import Modal from "../../../components/Modal/Modal"; 
+import ModalStyled from '../../../components/Modal/Style';
 
 const AnunciantesGuiaSection = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -32,7 +33,7 @@ const AnunciantesGuiaSection = () => {
               </SecondLineButton>
               <Modal isOpen={openModal}>
                 <div>
-                  {<h1>Formulário Anunciantes</h1>}
+                  {<div className='div-anun'>Formulário Anunciantes</div>}
                 </div>
               </Modal>
             </div>
@@ -51,15 +52,17 @@ const AnunciantesGuiaSection = () => {
                 <SecondLineButton onClick={() => setOpinModal(!opinModal)}>
                   Para Guias de Turismo
                 </SecondLineButton>
-                <Modal isOpen={opinModal}>
-                  <div className='div-guia-modal'>
-                    <h1>Formulário Guias  </h1>
-                  </div>
-                </Modal>
               </div>
             </div>
           </div>
         </div>
+                <Modal isOpen={opinModal}>
+                  <ModalStyled>
+                      <div className='guia-modal'>
+                          Form Guia
+                      </div>
+                  </ModalStyled>
+                </Modal>
       </AnunciantesGuiaSectionStyled>
     </SectionBase>
   );
