@@ -7,7 +7,7 @@ import ModalStyled from "../../../components/Modal/Style";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  body.popup-open {
+  body.modal-open {
     overflow: hidden;
   }
 `;
@@ -18,22 +18,22 @@ const AnunciantesGuiaSection = () => {
 
   const CloseOpenModal = () => {
     setOpenModal(false);
-    document.body.classList.remove('popup-open');
+    document.body.classList.remove('modal-open');
   };
 
   const CloseOpinModal = () => {
     setOpinModal(false);
-    document.body.classList.remove('popup-open');
+    document.body.classList.remove('modal-open');
   };
 
   const openAnunModal = () => {
     setOpenModal(true);
-    document.body.classList.add('popup-open');
+    document.body.classList.add('modal-open');
   }
 
   const openGuiaModal = () => {
     setOpinModal(true);
-    document.body.classList.add('popup-open');
+    document.body.classList.add('modal-open');
   }
 
   return (
