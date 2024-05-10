@@ -156,6 +156,9 @@ div.X-guia {
   cursor: pointer;
   font-size: 20px;
   color: var(--primaria);
+  text-align: right;
+  left: 326px;
+  
   }
   
 
@@ -166,7 +169,27 @@ div.X-guia {
   cursor: pointer;
   font-size: 20px;
   color: var(--primaria);
+  text-align: right;
+  left: 388px;
+  transition: 0.5s ease;
+  display: inline-block;
+
+ 
+    
 }
+
+  .close-button-g:hover{
+
+    transform: scale(1.1);
+    background-color: var(--primaria);
+    color: white;
+    border-radius: 7px;
+    padding-left: 10px;
+    top: 1px;
+    
+    
+    
+  }
 
    
   

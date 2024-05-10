@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { SecondLineButton } from "../../../components/Button/Button";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { AnunciantesGuiaSectionStyled } from "./Style";
 import Modal from "../../../components/Modal/Modal";
-import ModalStyled from "../../../components/Modal/Style";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
@@ -13,28 +12,32 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 const AnunciantesGuiaSection = () => {
-  const [openModal, setOpenModal] = useState(false);
-  const [opinModal, setOpinModal] = useState(false);
+  const [openModal, setOpenModal] = React.useState(false);
+  const [opinModal, setOpinModal] = React.useState(false);
 
   const CloseOpenModal = () => {
     setOpenModal(false);
-    document.body.classList.remove('modal-open');
+    document.body.classList.remove("modal-open");
   };
 
   const CloseOpinModal = () => {
     setOpinModal(false);
-    document.body.classList.remove('modal-open');
+    document.body.classList.remove("modal-open");
   };
 
   const openAnunModal = () => {
     setOpenModal(true);
-    document.body.classList.add('modal-open');
-  }
+    document.body.classList.remove("modal-open");
+  };
 
   const openGuiaModal = () => {
     setOpinModal(true);
-    document.body.classList.add('modal-open');
-  }
+    document.body.classList.add("modal-open");
+  };
+
+  const stopPropagation = (event) => {
+    event.stopPropagation();
+  };
 
   return (
     <>
@@ -82,30 +85,30 @@ const AnunciantesGuiaSection = () => {
               </div>
             </div>
           </div>
-          <Modal isOpen={openModal} onClose={CloseOpenModal}>
-            <ModalStyled>
-              <div className="anun-modal">
+          <div className="closeOutside" onClick={CloseOpenModal}>
+            <Modal isOpen={openModal} onClose={CloseOpenModal}>
+              <div className="anun-modal" onClick={stopPropagation}>
                 Form Anunciantes
-                <div className="X-anun">
+                
                   <button className="close-button-a" onClick={CloseOpenModal}>
                     X
                   </button>
-                </div>
+                
               </div>
-            </ModalStyled>
-          </Modal>
+            </Modal>
+          </div>
+          <div className="closeOutside" onClick={CloseOpinModal}>
           <Modal isOpen={opinModal} onClose={CloseOpinModal}>
-            <ModalStyled>
-              <div className="guia-modal">
-                Form Guia
-                <div className="X-guia">
-                  <button className="close-button-g" onClick={CloseOpinModal}>
-                    X
-                  </button>
-                </div>
-              </div>
-            </ModalStyled>
+            <div className="guia-modal" onClick={stopPropagation}>
+              Form Guia
+              
+                <button className="close-button-g" onClick={CloseOpinModal}>
+                  X
+                </button>
+              
+            </div>
           </Modal>
+          </div>
         </AnunciantesGuiaSectionStyled>
       </SectionBase>
     </>
