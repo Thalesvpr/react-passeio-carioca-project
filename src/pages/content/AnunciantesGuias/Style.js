@@ -43,7 +43,7 @@ const AnunciantesGuiaSectionStyled = styled.article`
   }
 
   div.content-anunciante-button {
-    padding-top: 109px;
+    padding-top: 80px;
   }
 
   div.content-table {
@@ -101,18 +101,74 @@ const AnunciantesGuiaSectionStyled = styled.article`
 
    div.guia-modal{
     
-    position: fixed; /* Define a posição da div como fixa */
+    position: fixed; 
     background: white;
     height: 500px;
     width: 500px;
     border-radius: 13px;
-    top: 50%; /* Coloca a div a meio caminho do topo da tela */
-    left: 50%; /* Coloca a div a meio caminho da esquerda da tela */
-    transform: translate(-50%, -50%); /* Move a div de volta metade de sua largura e altura */
-    z-index: 999; /* Define a ordem de empilhamento */
-    
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 999; 
     
    }
+
+   
+
+div.anun-modal {
+  position: fixed; 
+    background: white;
+    height: 500px;
+    width: 500px;
+    border-radius: 13px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 999; 
+    
+
+}
+
+div.X-anun {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primaria);
+  text-align: right;
+  padding-right: 8px;
+  top: -20px;
+}
+
+div.X-guia {
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primaria);
+  text-align: right;
+  padding-right: 8px;
+  top: -20px;
+}
+
+.close-button-a {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primaria);
+  }
+  
+
+.close-button-g {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primaria);
+}
+
+   
   
    
 
