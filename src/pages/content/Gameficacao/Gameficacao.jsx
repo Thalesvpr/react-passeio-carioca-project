@@ -11,9 +11,17 @@ export const GameficacaoSection = () => {
     <GameficacaoSectionStyled>
       <div className="section-gameficacao">
         <div className="gameficacao-card">
-          <MedalhaCard description="Descrição da medalha.">  </MedalhaCard>
-          <MedalhaCard description="Descrição da medalha."></MedalhaCard>
-          <MedalhaCard description="Descrição da medalha."></MedalhaCard>
+          <MedalhaCard 
+          description="Complete tel desafio para tal conquista e siga para proxima." 
+          title = ' " Que seja doce " '>  
+          </MedalhaCard>
+          <MedalhaCard description="Descrição da medalha." >
+
+          </MedalhaCard>
+          <MedalhaCard description="Descrição da medalha.">
+
+
+          </MedalhaCard>
 
         </div>
       </div>
