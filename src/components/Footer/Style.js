@@ -46,7 +46,7 @@ const FooterStyled = styled.article`
         
     }
     div.boxlinks{
-        background-color: white;
+        background-color: none;
         height: 48px;
         width: 48px;
         border-radius: 13px;
@@ -74,6 +74,11 @@ const FooterStyled = styled.article`
         align-items: center;
         flex-direction: column;
         display: flex;
+        
+    }
+
+    .insta {
+        margin-bottom: 4px;
         
     }
         
