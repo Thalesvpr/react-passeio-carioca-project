@@ -24,7 +24,7 @@ console.log (slides)
       
       {slides.map((slide, index) => (
         <div key={index} className="slide">
-            <div className="slide-content">{index}</div>
+          <div className="slide-content">{index}</div>
         </div>
         ))}
       </Slider>
@@ -37,7 +37,7 @@ console.log (slides)
         </button>
       </div>
     </div>
-        </CarrouselStyled>
+  </CarrouselStyled>
   );
 }
 
