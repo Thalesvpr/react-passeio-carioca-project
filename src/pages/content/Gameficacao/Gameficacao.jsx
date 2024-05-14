@@ -1,4 +1,6 @@
+import MedalhaCard from "../../../components/MedalhaCard/MedalhaCard";
 import SectionBase from "../../../components/SectionBase/SectionBase";
+
 import { GameficacaoSectionStyled } from "./Style";
 
 
@@ -7,7 +9,15 @@ export const GameficacaoSection = () => {
     return(
     <SectionBase>
     <GameficacaoSectionStyled>
-      <div className="section-gameficacao"></div>
+      <div className="section-gameficacao">
+        <div className="gameficacao-card">
+          <MedalhaCard description="Descrição da medalha.">  </MedalhaCard>
+          <MedalhaCard description="Descrição da medalha."></MedalhaCard>
+          <MedalhaCard description="Descrição da medalha."></MedalhaCard>
+
+        </div>
+      </div>
+
           <div className="gameficacao-title">
               Conquiste o Rio de Janeiro, conheça algumas medalhas!
             </div>
