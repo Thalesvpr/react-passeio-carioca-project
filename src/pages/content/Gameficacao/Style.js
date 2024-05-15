@@ -22,23 +22,30 @@ div.section-gameficacao{
         font-size: 24px;
         font-weight: bold;
         margin-top: 0px; /* Espaçamento abaixo do texto do título */
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 1450px;
 
         
 
         }
         .title-description{
-
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: 1500px;
         }
         .section-image{
         height: 225px;
-        width: 225px;
+        width: 400px;
+        border-radius: 20px;
         background-color: yellow;
         display: flex;
         position: absolute;
         margin: auto;
-        left: 100;
-        right: 10;
-        
+        right: 20px;
+        top: 1415px;
 
         }    
     

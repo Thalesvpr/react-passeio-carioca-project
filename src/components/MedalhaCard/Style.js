@@ -25,6 +25,8 @@ const MedalhaCardStyled = styled.article`
       justify-content: space-between;
       position: absolute;
       top: -85px;
+      border-radius: 20px;
+
     }
     .content-title{
       display: flex;
