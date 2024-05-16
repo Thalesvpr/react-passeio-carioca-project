@@ -5,7 +5,6 @@ const HeaderStyled = styled.article`
 
     width: 100%;
     /* background-color: green; */
-    
     position: fixed;
     z-index: 10;
     color: var(--neutral);
@@ -21,12 +20,15 @@ const HeaderStyled = styled.article`
             display: flex;
             align-items: center;
             gap: 20px;
-
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
             
             h1{
                 font-size: 1.5rem;
                 font-weight: 300;
                 text-align: start;
+                
             }
             .logo{
                 width: auto;
@@ -36,14 +38,6 @@ const HeaderStyled = styled.article`
         }
         
     }
-    div.nav{
-        display: flex;
-        background-color: var(--destaque);
-        padding: 10px;
-        padding-inline: 30px;
-        border-radius: 40px
-    }
-
     .not-visible{
         display: none;
     }
@@ -64,3 +58,7 @@ const HeaderStyled = styled.article`
 
 
 export { HeaderStyled }
+    
+    
+    
+    
