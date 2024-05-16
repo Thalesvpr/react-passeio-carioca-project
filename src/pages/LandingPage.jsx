@@ -23,7 +23,7 @@ const LandingPage = () => (
       <BaixeAppSection></BaixeAppSection>
       </div>
       <ExploreSection></ExploreSection>
-      {/* <GameficacaoSection></GameficacaoSection> */}
+      <GameficacaoSection></GameficacaoSection>
       <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <PasseiosSection></PasseiosSection>
       <ContatoSection></ContatoSection>
