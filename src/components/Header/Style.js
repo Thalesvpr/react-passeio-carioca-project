@@ -51,6 +51,12 @@ const HeaderStyled = styled.article`
     .visible{
         display: flex;
     }
+    .burguer-buttom{
+        background-color: aliceblue;
+        height: 40px;
+        width: 40px;
+        border-radius: 13px;
+    }
 
 `
 

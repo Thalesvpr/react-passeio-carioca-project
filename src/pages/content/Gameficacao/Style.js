@@ -21,11 +21,11 @@ div.section-gameficacao{
         .title-text{
         font-size: 24px;
         font-weight: bold;
-        margin-top: 0px; /* Espaçamento abaixo do texto do título */
+        margin-top: 0px;
         display: flex;
         position: absolute;
         left: 20px;
-        top: 1450px;
+        top: 2200px;
 
         
 
@@ -34,7 +34,7 @@ div.section-gameficacao{
         display: flex;
         position: absolute;
         left: 20px;
-        top: 1500px;
+        top: 2250px;
         }
         .section-image{
         height: 225px;
@@ -45,7 +45,7 @@ div.section-gameficacao{
         position: absolute;
         margin: auto;
         right: 20px;
-        top: 1415px;
+        top: 2110px;
 
         }    
     
@@ -58,7 +58,10 @@ div.section-gameficacao{
     line-height: 1.5; 
     justify-content: center;
 }
-}
+} 
+
+
+
 `
 
 export {GameficacaoSectionStyled};
