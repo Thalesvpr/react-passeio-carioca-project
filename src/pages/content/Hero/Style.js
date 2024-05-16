@@ -9,7 +9,6 @@ flex-direction: column;
 justify-content: space-between;
 padding-inline: 100px;
 
-
 .content-cta{
 
 }

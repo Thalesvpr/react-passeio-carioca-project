@@ -13,31 +13,46 @@ function Carrousel(props) {
     sliderRef.current.slickPrev();
   };
 
-const slides = props.slides
-console.log (slides)
+  const slides = props.slides
+  console.log(slides)
+
+  const settings = {
+
+    centerMode: true,
+    showDots: true,
+    infinite: true,
+    slideSpeed: 500,
+    
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+
+
+    slidesToShow: 1,
+    slidesToScroll: 1,
+};
+
 
   return (
-  <CarrouselStyled>
-
-    <div className="slider-container">
-      <Slider ref={sliderRef} {...props.settings}>
-      
-      {slides.map((slide, index) => (
-        <div key={index} className="slide">
-          <div className="slide-content">{index}</div>
-        </div>
-        ))}
-      </Slider>
-      <div style={{ textAlign: "center" }}>
+    <CarrouselStyled>
         <button className="button" onClick={previous}>
           {props.prevButtonLabel}
         </button>
+
+      <div className="content">
+        <Slider className="slider" ref={sliderRef} {...settings}>
+
+          {slides.map((slide, index) => (
+            <div key={index} className="slide">
+              <div className="slide-content">{index}</div>
+            </div>
+          ))}
+        </Slider>
+      </div>
         <button className="button" onClick={next}>
           {props.nextButtonLabel}
         </button>
-      </div>
-    </div>
-  </CarrouselStyled>
+    </CarrouselStyled>
   );
 }
 

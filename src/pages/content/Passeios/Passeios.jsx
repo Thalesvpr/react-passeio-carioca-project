@@ -7,15 +7,7 @@ import { PasseiosSectionStyled } from "./Style";
 const PasseiosSection = () => {
     const slides=['1','2', '3', '4', '5']
 
-    const settings = {
 
-        showDots: true,
-        infinite: true,
-        slideSpeed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    };
-    
     return(
     <SectionBase>
         <SectionTitle>
@@ -23,10 +15,11 @@ const PasseiosSection = () => {
         </SectionTitle>
         <PasseiosSectionStyled>
             <div className="slider">
-                <Carrousel settings={{...settings}}
+                <Carrousel 
                 prevButtonLabel = "Previous"
                 nextButtonLabel = "Next"
                 slides = {slides}>
+                
                 
                 </Carrousel>
             </div>

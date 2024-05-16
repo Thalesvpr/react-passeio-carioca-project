@@ -4,9 +4,9 @@ import styled from "styled-components";
 const FooterStyled = styled.article`
     height: 300px;
     width: 100%;
+    position: absolute;
     
-    
-    z-index: 10;
+    z-index: 100;
     div.content-socials{
         color: white;
         

@@ -8,24 +8,27 @@ export const ContatoSection = () => (
     <SectionBase>
         <ContatoSectionStyled>
             <div className="section-content">
-            <div className="content-form">
-            <h1>Precisa entrar em contato conosco?</h1>
-            <InputField
-                placeholder = "Titulo"        
-                titulo = "Escreva seu texto"
-            />
-            <InputField
-                placeholder = "Titulo"
-                titulo = "Titulo"
-            />
-            <SecondLineButton>
-                Enviar
-            </SecondLineButton>
+                <div className="content-form">
+                    <h1>Precisa entrar em contato conosco?</h1>
+                    <InputField
+                        placeholder="Titulo"
+                        titulo="Escreva seu texto"
+                    />
+                    <InputField
+                        placeholder="Titulo"
+                        titulo="Titulo"
+                    />
+                    <SecondLineButton>
+                        Enviar
+                    </SecondLineButton>
                 </div>
-        </div>
-        </ContatoSectionStyled>
 
-    </SectionBase>
+                {/* <img className="lapa" src={`${process.env.PUBLIC_URL}imagens/png/lapa.png`}/> */}
+            </div>
+                <img className="lapa" src="/imagens/png/lapa.png" />
+        </ContatoSectionStyled>
+        </SectionBase>
+
 
 )
 

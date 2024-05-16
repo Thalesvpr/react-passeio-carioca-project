@@ -22,14 +22,12 @@ const LandingPage = () => (
       <HeroSection></HeroSection>
       <BaixeAppSection></BaixeAppSection>
       </div>
-      <GameficacaoSection></GameficacaoSection>
       <ExploreSection></ExploreSection>
-      <ContatoSection></ContatoSection>
+      {/* <GameficacaoSection></GameficacaoSection> */}
       <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <PasseiosSection></PasseiosSection>
-      
+      <ContatoSection></ContatoSection>
       <Footer></Footer> 
-
     </LandingStyled>
 
       
