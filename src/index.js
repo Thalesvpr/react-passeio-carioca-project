@@ -1,20 +1,20 @@
 
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import LandingPage from "./pages/LandingPage";
 
 const container = document.getElementById("root");
-const root = createRoot(container);
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-        <Route path="/" element={<LandingPage/>} />
+        <Route path="/" element={<App/>} />
+        <Route path='/outra' element={<Outra/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>-
   </React.StrictMode>
 );
