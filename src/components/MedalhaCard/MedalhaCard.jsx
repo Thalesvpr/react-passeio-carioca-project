@@ -8,7 +8,7 @@ const MedalhaCard = (props) => {
     >
       <div className="content">
         <div className="content-image">
-        {/* <img src={props.src} /> */}
+        <img src={props.src} /> 
 
         </div>
         <div className="content-title">
@@ -25,5 +25,6 @@ const MedalhaCard = (props) => {
     </MedalhaCardPrincipal>
     )
   }
-  
+
+
   export default MedalhaCard;

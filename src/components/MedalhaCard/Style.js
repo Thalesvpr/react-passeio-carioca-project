@@ -9,8 +9,8 @@ div.content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 155px;
+    height: 155px;
     scale: 0.6;
     position: relative;
     padding-block: 60px;
@@ -22,7 +22,7 @@ div.content{
       width: 225px;
       background-color: yellow;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       border-radius: 20px;
       
 
@@ -42,7 +42,6 @@ div.content{
   }      
   }
 `
-
 const MedalhaCardPrincipal = styled.article`
   div.content{
     background-color: var(--secundaria);
@@ -52,8 +51,8 @@ const MedalhaCardPrincipal = styled.article`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 225px;
+    height: 225px;
     position: relative;
     padding-block: 60px;
     justify-content: flex-end;
@@ -63,9 +62,8 @@ const MedalhaCardPrincipal = styled.article`
     .content-image{
       height: 225px;
       width: 225px;
-      background-color: yellow;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       position: absolute;
       top: -85px;
       border-radius: 20px;
@@ -75,9 +73,8 @@ const MedalhaCardPrincipal = styled.article`
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
         .title-medalha{
-          margin-bottom: 20px;
         }
 
     
