@@ -15,19 +15,18 @@ export const GameficacaoSection = () => {
         </div>
 
         <div className="gameficacao-card">
-          <MedalhaCard
-           description="Image" >
-
-          </MedalhaCard> 
-
           <MedalhaCard 
+          estado = "principal"
           description="Complete tel desafio para tal conquista e siga para proxima." 
           title = ' " Que seja doce " '
           src = "/imagens/png/medalha.png">
 
           </MedalhaCard>
 
-          <MedalhaCard description="Image.">
+          <MedalhaCard 
+          src = "/imagens/png/medalha.png"
+          estado = "secundaria"
+          description="Image.">
 
 
           </MedalhaCard>

@@ -3,10 +3,8 @@ import { MedalhaCardPrincipal, MedalhaCardSecundaria} from "./Style"
 const MedalhaCard = (props) => {
 
     return(
-    <MedalhaCardPrincipal 
-      visivel = {props.visivel}
-    >
-      <div className="content">
+    <MedalhaCardPrincipal>
+      <div className={props.estado}>
         <div className="content-image">
         <img src={props.src} /> 
 
@@ -23,6 +21,7 @@ const MedalhaCard = (props) => {
 
      
     </MedalhaCardPrincipal>
+
     )
   }
 
