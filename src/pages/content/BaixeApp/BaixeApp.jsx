@@ -1,7 +1,7 @@
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { BaixeAppSectionStyled } from "./Style";
 import { AndroidLogo, AppleLogo } from './../../../components/Icons/Icons';
-import { SecondLineButton } from "../../../components/Button/Button";
+import { NeutralButton } from "../../../components/Button/Button";
 
 
 export const BaixeAppSection = () => (
@@ -26,12 +26,12 @@ export const BaixeAppSection = () => (
                 </div>
                 <div className="content-cta">
                     <div className="cta-download">
-                    <SecondLineButton >
+                    <NeutralButton >
                         Baixe agora para Apple
-                    </SecondLineButton>
-                    <SecondLineButton>
+                    </NeutralButton>
+                    <NeutralButton>
                     Baixe agora para Android
-                    </SecondLineButton>
+                    </NeutralButton>
                     </div>
                 <span>Navegue por histórias fascinantes, participe de jogos interativos e conecte-se com guias locais.</span>
                 </div>

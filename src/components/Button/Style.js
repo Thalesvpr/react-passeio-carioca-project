@@ -8,6 +8,7 @@ button{
     cursor: pointer;
     padding: 6px 20px;
     border: none;
+    white-space: nowrap;
     &:hover{
         border-bottom: 2px solid #fff;  
     }
@@ -15,7 +16,7 @@ button{
 
 }
 `
-const SecondLineButtonStyled = styled.article`
+const NeutralButtonStyled = styled.article`
 
 button{
     font-size: 13px;
@@ -25,14 +26,14 @@ button{
     padding: 6px 20px;
     border: none;
     border-radius: 20rem;
-    
+    white-space: nowrap;
 
 }
 `
 
-const ThirdLineButtonStyled = styled.article`
-
+const PrimaryButtonStyled = styled.article`
 button{
+    white-space: nowrap;
     font-size: 13px;
     color: var(--neutral);
     background-color: var(--primaria);
@@ -40,9 +41,10 @@ button{
     padding: 6px 20px;
     border: none;
     border-radius: 20rem;
+
     
 
 }
 `
 
-export {OutlineButtonStyled, SecondLineButtonStyled,ThirdLineButtonStyled};
+export {OutlineButtonStyled, NeutralButtonStyled,PrimaryButtonStyled};

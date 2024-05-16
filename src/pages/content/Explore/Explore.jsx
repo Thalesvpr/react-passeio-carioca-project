@@ -1,4 +1,4 @@
-import { SecondLineButton } from "../../../components/Button/Button";
+import { NeutralButton } from "../../../components/Button/Button";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { ExploreSectionStyled } from "./Style";
 
@@ -19,9 +19,9 @@ const ExploreSection = () => (
                 <div className="cta-box">
                     <div className="box-content">
                     <h2>Tudo em um só lugar.</h2>
-                    <SecondLineButton>
+                    <NeutralButton>
                         Baixe o app
-                    </SecondLineButton>
+                    </NeutralButton>
                     </div>
                 </div>
             </div>

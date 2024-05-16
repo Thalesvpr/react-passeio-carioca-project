@@ -1,8 +1,8 @@
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { ContatoSectionStyled } from "./Style";
 import { InputField } from './../../../components/InputField/InputField';
-import { SecondLineButtonStyled } from "../../../components/Button/Style";
-import { SecondLineButton } from "../../../components/Button/Button";
+import { NeutralButtonStyled } from "../../../components/Button/Style";
+import { NeutralButton } from "../../../components/Button/Button";
 
 export const ContatoSection = () => (
     <SectionBase>
@@ -18,9 +18,9 @@ export const ContatoSection = () => (
                         placeholder="Titulo"
                         titulo="Titulo"
                     />
-                    <SecondLineButton>
+                    <NeutralButton>
                         Enviar
-                    </SecondLineButton>
+                    </NeutralButton>
                 </div>
 
                 {/* <img className="lapa" src={`${process.env.PUBLIC_URL}imagens/png/lapa.png`}/> */}

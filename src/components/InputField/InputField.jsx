@@ -1,4 +1,4 @@
-import { SecondLineButton } from "../Button/Button";
+import { NeutralButton } from "../Button/Button";
 import {InputFieldStyled} from "./Style";
 
 export const InputField = (props) => {

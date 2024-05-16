@@ -1,5 +1,5 @@
 import React from "react";
-import { SecondLineButton } from "../../../components/Button/Button";
+import { NeutralButton } from "../../../components/Button/Button";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { AnunciantesGuiaSectionStyled } from "./Style";
 import Modal from "../../../components/Modal/Modal";
@@ -60,9 +60,9 @@ const AnunciantesGuiaSection = () => {
                 sobre seus potenciais clientes.
               </p>
               <div className="content-anunciante-button">
-                <SecondLineButton onClick={openAnunModal}>
+                <NeutralButton onClick={openAnunModal}>
                   Para Anunciantes
-                </SecondLineButton>
+                </NeutralButton>
               </div>
             </div>
             <div className="section-guia-content">
@@ -78,9 +78,9 @@ const AnunciantesGuiaSection = () => {
                   através do Passeio Carioca.
                 </p>
                 <div className="content-guia-button">
-                  <SecondLineButton onClick={openGuiaModal}>
+                  <NeutralButton onClick={openGuiaModal}>
                     Para Guias de Turismo
-                  </SecondLineButton>
+                  </NeutralButton>
                 </div>
               </div>
             </div>

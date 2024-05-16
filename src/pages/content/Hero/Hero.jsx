@@ -1,4 +1,4 @@
-import { SecondLineButton } from "../../../components/Button/Button";
+import { NeutralButton } from "../../../components/Button/Button";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { HeroSectionStyled } from "./Style";
 
@@ -11,9 +11,9 @@ export const HeroSection = () => (
                     <h1>Baixe o <span>Passeio Carioca</span> disponível para iOS e Android.</h1>
                 </div>
                 <div className="content-cta">
-                    <SecondLineButton>
+                    <NeutralButton>
                         Plataformas Disponíveis
-                    </SecondLineButton>
+                    </NeutralButton>
                 </div>
         </HeroSectionStyled>
     </SectionBase>

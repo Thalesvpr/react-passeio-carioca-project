@@ -3,8 +3,8 @@ import { ModalStyled } from "../Modal/Style";
 
 import {
   OutlineButtonStyled,
-  SecondLineButtonStyled,
-  ThirdLineButtonStyled,
+  NeutralButtonStyled,
+  PrimaryButtonStyled,
 } from "./Style";
 
 export const OutlineButton = (props) => {
@@ -15,7 +15,7 @@ export const OutlineButton = (props) => {
   );
 };
 
-export const SecondLineButton = (props) => {
+export const NeutralButton = (props) => {
   const handleClick = () => {
     if (props.onClick) {
       props.onClick();
@@ -23,18 +23,18 @@ export const SecondLineButton = (props) => {
   };
 
   return (
-    <SecondLineButtonStyled>
+    <NeutralButtonStyled>
       <button onClick={handleClick}>{props.children}</button>
-    </SecondLineButtonStyled>
+    </NeutralButtonStyled>
   );
 
 
 };
 
-export const ThirdLineButton = (props) => {
+export const PrimaryButton = (props) => {
   return (
-    <ThirdLineButtonStyled>
+    <PrimaryButtonStyled>
       <button>{props.children}</button>
-    </ThirdLineButtonStyled>
+    </PrimaryButtonStyled>
   );
 };

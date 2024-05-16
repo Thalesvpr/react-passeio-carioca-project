@@ -1,4 +1,4 @@
-import { SecondLineButton, ThirdLineButton } from "../../../components/Button/Button";
+import { NeutralButton, PrimaryButton } from "../../../components/Button/Button";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import { GuiasSectionStyled } from './Style';
 
@@ -19,7 +19,7 @@ const GuiasSection = () => (
                     <p className="content-guiasubtext"> Cadastre-se hoje e comece a oferecer seus passeios guiados através do Passeio Carioca</p> 
                 <div className="content-guiabutton">
              
-                <ThirdLineButton>Para Guias de Turismo</ThirdLineButton>
+                <PrimaryButton>Para Guias de Turismo</PrimaryButton>
             
                 </div>
             </div>

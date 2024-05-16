@@ -1,6 +1,6 @@
 import React from "react";
 import { FooterStyled } from "./Style";
-import { OutlineButton, SecondLineButton } from "../Button/Button";
+import { OutlineButton, NeutralButton } from "../Button/Button";
 import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 
@@ -32,7 +32,7 @@ const Footer = () => (
       </div>
       <div className="content-downloadlogo">
         <div className="box"></div>
-        <SecondLineButton>Baixe o App</SecondLineButton>
+        <NeutralButton>Baixe o App</NeutralButton>
       </div>
       <div className="nav">
         <OutlineButton>Baixe o App</OutlineButton>
