@@ -34,6 +34,7 @@ div.content-form{
     flex-direction: column;
     gap: 30px;
     width: 420px;
+    z-index: 999;
     h1{
         font-size: 2rem;
         font-weight: 300;
