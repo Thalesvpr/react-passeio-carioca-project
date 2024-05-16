@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MedalhaCardStyled = styled.article`
+const MedalhaCardSecundaria = styled.article`
 div.content{
     background-color: var(--secundaria);
     padding: 20px;
@@ -41,7 +41,10 @@ div.content{
 
   }      
   }
-  /* div.content{
+`
+
+const MedalhaCardPrincipal = styled.article`
+  div.content{
     background-color: var(--secundaria);
     padding: 20px;
     margin: 20px;
@@ -85,7 +88,7 @@ div.content{
 
 
   }      
-  } */
+  }
 `
 
-export {MedalhaCardStyled}
+export {MedalhaCardPrincipal, MedalhaCardSecundaria}

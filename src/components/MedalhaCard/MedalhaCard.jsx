@@ -1,9 +1,11 @@
-import { MedalhaCardStyled } from "./Style"
+import { MedalhaCardPrincipal, MedalhaCardSecundaria} from "./Style"
 
 const MedalhaCard = (props) => {
 
     return(
-    <MedalhaCardStyled>
+    <MedalhaCardPrincipal 
+      visivel = {props.visivel}
+    >
       <div className="content">
         <div className="content-image">
         {/* <img src={props.src} /> */}
@@ -20,7 +22,7 @@ const MedalhaCard = (props) => {
       </div>
 
      
-    </MedalhaCardStyled>
+    </MedalhaCardPrincipal>
     )
   }
   

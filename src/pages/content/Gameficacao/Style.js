@@ -4,8 +4,8 @@ import styled from "styled-components";
 const GameficacaoSectionStyled = styled.article`
 
 div.section-gameficacao{ 
-    background-color: var(--destaque);
-    height: 1000px;
+    background-color: var(--neutral);
+    height: 500px;
     padding: 0px;
     color: var(--contrast);
     display: flex;
@@ -34,7 +34,7 @@ div.section-gameficacao{
         display: flex;
         position: absolute;
         left: 20px;
-        top: 2250px;
+        top: 2235px;
         }
         .section-image{
         height: 225px;
@@ -44,8 +44,8 @@ div.section-gameficacao{
         display: flex;
         position: absolute;
         margin: auto;
-        right: 20px;
-        top: 2110px;
+        left: 20px;
+        top: 2310px;
 
         }    
     
@@ -56,7 +56,11 @@ div.section-gameficacao{
     color: var(--contrast);
     font-size: 16px; 
     line-height: 1.5; 
-    justify-content: center;
+    justify-content: end;
+    align-items: end;
+
+
+
 }
 } 
 
