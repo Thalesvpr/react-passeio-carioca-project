@@ -27,7 +27,7 @@ const LandingPage = () => (
       <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <PasseiosSection></PasseiosSection>
       <ContatoSection></ContatoSection>
-      <Footer></Footer> 
+      <Footer></Footer>
     </LandingStyled>
 
       

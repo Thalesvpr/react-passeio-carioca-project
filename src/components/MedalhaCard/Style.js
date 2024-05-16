@@ -1,7 +1,47 @@
 import styled from "styled-components";
 
 const MedalhaCardStyled = styled.article`
-  div.content{
+div.content{
+    background-color: var(--secundaria);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    scale: 0.6;
+    position: relative;
+    padding-block: 60px;
+    color: var(--neutral);
+    opacity: 0.40;
+
+    .content-image{
+      height: 225px;
+      width: 225px;
+      background-color: yellow;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 20px;
+      
+
+
+    }
+    .content-title{
+      display: none;
+  
+
+
+    
+    }
+    .content-description{
+      display: none;
+
+
+  }      
+  }
+  /* div.content{
     background-color: var(--secundaria);
     padding: 20px;
     margin: 20px;
@@ -45,7 +85,7 @@ const MedalhaCardStyled = styled.article`
 
 
   }      
-  }
+  } */
 `
 
 export {MedalhaCardStyled}

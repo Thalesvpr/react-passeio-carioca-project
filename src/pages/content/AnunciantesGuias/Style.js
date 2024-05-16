@@ -2,102 +2,102 @@ import styled from "styled-components";
 
 const AnunciantesGuiaSectionStyled = styled.article`
 
-  div.section-title {
-    background-color: none;
-    display: flex;
-    color: var(--contrast);
-    font-size: 16px; 
-    line-height: 1.5; 
-  }
+div.Section {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 
-  div.section-anunciante-content {
-    background-color: var(--primaria);
-    color: var(--neutral);
-    display: flex;
-    
-    
-  }
+}
 
-  div.content-anunciante-cta {
-    margin-top: 150px;
-    margin-left: 200px;
-    text-align: right;
-    height: 500px;
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
+h1.title{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-block: 50px;
 
-  h2.content-anunciante-subtitle {
-    font-size: 18px; 
-    line-height: 1.5; 
-  }
+ 
+}
 
-  p.content-anunciante-text {
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
 
-  p.content-anunciante-subtext {
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
+div.content {  
+  background-color: var(--primaria);
+  height: 500px;
+  color: var(--neutral);
+  display: flex;
+  justify-content: center; 
+  align-items: center; /* Centraliza os elementos verticalmente */
+  gap: 120px;
+  width: 100%;
+}
 
-  div.content-anunciante-button {
-    padding-top: 80px;
-  }
 
-  div.content-table {
-    height: 400px;
-    width: 720px;
-    background-color: var(--secundaria);
-    border-radius: 30px;
-  }
+div.Anunciantes {
+ justify-content: center;
+ align-items: center;
+ width: 500px;
+ text-align: left;
 
-  p.tabela {
-    color: var(--primaria);
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
+}
 
-  div.section-guia-content {
-    background-color: var(--primaria);
-    color: var(--neutral);
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 220px;
-    position: relative;
-  }
+div.Guias {
+  justify-content: center;
+ align-items: center;
+ width: 500px;
+ text-align: right;
 
-  div.content-guia-cta {
-    margin-top: 150px;
-    margin-left: 200px;
-    text-align: left;
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
+ 
 
-  h2.content-guia-subtitle {
-    font-size: 18px; 
-    line-height: 1.5; 
-  }
+}
 
-  p.content-guia-text {
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
 
-  p.content-guia-subtext {
-    font-size: 14px; 
-    line-height: 1.5; 
-  }
+div.GuiasButton{
+  
+  
 
-  div.content-guia-button {
-    padding-top: 80px;
-  }
-   div.div-anun {
-    background: white;
-     
-   }
+}
+
+div.AnunciantesButton {
+  
+
+}
+.HG1 {
+  font-size: 24px;
+}
+
+.HG2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.AG1 {
+  font-size: 24px;
+}
+
+.AG2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+
+p {
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */
+}
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
 
    div.guia-modal{
     
@@ -157,7 +157,9 @@ div.X-guia {
   font-size: 20px;
   color: var(--primaria);
   text-align: right;
-  left: 326px;
+  left: 330px;
+  display: inline-block;
+
   
   }
   
@@ -171,25 +173,11 @@ div.X-guia {
   color: var(--primaria);
   text-align: right;
   left: 388px;
-  transition: 0.5s ease;
-  display: inline-block;
 
  
     
 }
 
-  .close-button-g:hover{
-
-    transform: scale(1.1);
-    background-color: var(--primaria);
-    color: white;
-    border-radius: 7px;
-    padding-left: 10px;
-    top: 1px;
-    
-    
-    
-  }
 
    
   
