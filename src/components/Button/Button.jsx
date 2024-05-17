@@ -5,6 +5,7 @@ import {
   OutlineButtonStyled,
   NeutralButtonStyled,
   PrimaryButtonStyled,
+  IconButtonStyled,
 } from "./Style";
 
 export const OutlineButton = (props) => {
@@ -36,5 +37,18 @@ export const PrimaryButton = (props) => {
     <PrimaryButtonStyled>
       <button>{props.children}</button>
     </PrimaryButtonStyled>
+  );
+};
+
+export const IconButton = (props) => {
+  const handleClick = () => {
+    if (props.onClick) {
+    props.onClick();
+  }
+};
+  return (
+    <IconButtonStyled>
+      <button onClick={handleClick}>{props.children}</button>
+    </IconButtonStyled>
   );
 };

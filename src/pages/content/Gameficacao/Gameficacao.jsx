@@ -1,11 +1,28 @@
+import { IconButton} from "../../../components/Button/Button";
 import MedalhaCard from "../../../components/MedalhaCard/MedalhaCard";
 import { GameficacaoSectionStyled } from "./Style";
+import { BsChevronRight } from "react-icons/bs";
+import { BsChevronLeft } from "react-icons/bs";
 
 
 export const GameficacaoSection = () => {
 
     return(
     <GameficacaoSectionStyled>
+      <IconButton>
+        <BsChevronRight 
+        
+        
+        
+        />
+      </IconButton>
+      <IconButton>
+        <BsChevronLeft 
+        
+        
+        
+        /> 
+      </IconButton>
       <div className="section-gameficacao">
 
         <div className="section-title">

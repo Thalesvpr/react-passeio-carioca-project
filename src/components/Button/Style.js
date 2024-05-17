@@ -46,5 +46,20 @@ button{
 
 }
 `
+const IconButtonStyled = styled.article`
 
-export {OutlineButtonStyled, NeutralButtonStyled,PrimaryButtonStyled};
+button{
+    color: var(--neutral);
+    background-color: var(--secundaria);
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 15rem;
+}
+`
+
+export {IconButtonStyled, OutlineButtonStyled, NeutralButtonStyled,PrimaryButtonStyled};

@@ -2,6 +2,7 @@ import Carrousel from "../../../components/Carrousel/Carrousel";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import { PasseiosSectionStyled } from "./Style";
+import { BsChevronRight } from "react-icons/bs";
 
 
 const PasseiosSection = () => {
@@ -13,6 +14,11 @@ const PasseiosSection = () => {
         <SectionTitle>
             Curta aquele gostinho dos passeios favoritos da galera!
         </SectionTitle>
+        <BsChevronRight 
+        
+        
+        
+        />
         <PasseiosSectionStyled>
             <div className="slider">
                 <Carrousel 
