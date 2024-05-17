@@ -20,8 +20,8 @@ function CarrouselMedalha(props) {
   const settings = {
 
     centerMode: true,
-    showDots: true,
-    infinite: true,
+    showDots: false,
+    infinite: false,
     slideSpeed: 10,
     
     beforeChange: (current, next) => setSliderIndex(next),

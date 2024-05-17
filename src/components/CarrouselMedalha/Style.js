@@ -30,7 +30,7 @@ gap: 60px;
     div.content{
         width: 600px;
     height: 450px;
-        background-color: #f00;
+        /* background-color: #f00; */
         padding: auto;
     }
     div.slide-content{
@@ -50,8 +50,8 @@ gap: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     position: relative;
     padding-block: 60px;
     justify-content: flex-end;
@@ -59,8 +59,8 @@ gap: 60px;
 
 
     .content-image{
-      height: 225px;
-      width: 225px;
+      height: 200px;
+      width: 200px;
       display: flex;
       justify-content: center;
       position: absolute;

@@ -32,13 +32,18 @@ export const GameficacaoSection = () => {
   ]
   return (
     <GameficacaoSectionStyled>
+        <div className="gameficacao-title">
+          <div className="gameficacao-text">Curta aquele gostinho dos </div>
+          <div className="gameficacao-description">passeios favoritos da galera! </div>
+          </div>
       <div className="section-gameficacao">
-        <div className="section-image"></div>
+        <div className="gameficacao-image"> 
+          <img src="/imagens/png/explore.png"/>
+        </div>
         <CarrouselMedalha
                 prevButtonLabel = {<BsChevronLeft/>}
                 nextButtonLabel = {<BsChevronRight/>}
                 slides = {Slides}>
-                
                 </CarrouselMedalha>
     </div>
     </GameficacaoSectionStyled>

@@ -3,6 +3,27 @@ import styled from "styled-components";
 
 const GameficacaoSectionStyled = styled.article`
 
+div.gameficacao-title{
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-inline: 120px;
+
+        .gameficacao-description{
+        width: 300px;
+        
+        .title-text{
+        width: 300px;
+        font-size: 2rem;
+        font-weight: 600;
+
+        }
+
+        }
+    }  
+
 
 
 div.section-gameficacao{ 
@@ -12,30 +33,16 @@ div.section-gameficacao{
     align-items: center;
     gap: 100px;
     
-    .section-title{
-    padding-top: 100px;
+    .gameficacao-image{
+        img{
+            height: auto;
+            width: 600px;
+               
 
-    }
-        .title-text{
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 0px;
-        display: flex;
-        
-
+         }
         }
-        .title-description{
-        display: flex;
-        }
-        .section-image{
-        height: 225px;
-        width: 400px;
-        border-radius: 20px;
-        background-color: yellow;
-        display: flex;
-        }    
     
- 
+
     div.gameficacao-card{
     background-color: none;
     display: flex;
@@ -46,11 +53,8 @@ div.section-gameficacao{
 
 
 
-}
 } 
-
-
-
+}
 `
 
 export {GameficacaoSectionStyled};
