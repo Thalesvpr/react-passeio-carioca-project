@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 const GameficacaoSectionStyled = styled.article`
 
-div.section-gameficacao{ 
+
+
+div.sesction-gameficacao{ 
     background-color: var(--neutral);
     height: 500px;
     padding: 0px;
@@ -23,7 +25,6 @@ div.section-gameficacao{
         font-weight: bold;
         margin-top: 0px;
         display: flex;
-        position: absolute;
         left: 20px;
         top: 2200px;
 
@@ -32,7 +33,6 @@ div.section-gameficacao{
         }
         .title-description{
         display: flex;
-        position: absolute;
         left: 20px;
         top: 2235px;
         }
@@ -42,7 +42,6 @@ div.section-gameficacao{
         border-radius: 20px;
         background-color: yellow;
         display: flex;
-        position: absolute;
         margin: auto;
         left: 20px;
         top: 2310px;
@@ -56,8 +55,7 @@ div.section-gameficacao{
     color: var(--contrast);
     font-size: 16px; 
     line-height: 1.5; 
-    justify-content: end;
-    align-items: end;
+
 
 
 
