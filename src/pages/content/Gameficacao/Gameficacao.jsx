@@ -7,7 +7,6 @@ import { BsChevronLeft } from "react-icons/bs";
 
 export const GameficacaoSection = () => {
 
-
   const Slides = [
     <MedalhaCard
       estado="principal"
@@ -33,14 +32,15 @@ export const GameficacaoSection = () => {
   ]
   return (
     <GameficacaoSectionStyled>
-
+      <div className="section-gameficacao">
+        <div className="section-image"></div>
         <CarrouselMedalha
                 prevButtonLabel = {<BsChevronLeft/>}
                 nextButtonLabel = {<BsChevronRight/>}
                 slides = {Slides}>
                 
                 </CarrouselMedalha>
-
+    </div>
     </GameficacaoSectionStyled>
   )
 }

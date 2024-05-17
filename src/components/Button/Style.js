@@ -56,8 +56,8 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 15rem;
 }
 `

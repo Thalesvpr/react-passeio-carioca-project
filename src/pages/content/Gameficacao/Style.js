@@ -5,19 +5,15 @@ const GameficacaoSectionStyled = styled.article`
 
 
 
-div.sesction-gameficacao{ 
-    background-color: var(--neutral);
+div.section-gameficacao{ 
     height: 500px;
-    padding: 0px;
-    color: var(--contrast);
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    gap: 100px;
     
     .section-title{
     padding-top: 100px;
-
 
     }
         .title-text{
@@ -25,16 +21,11 @@ div.sesction-gameficacao{
         font-weight: bold;
         margin-top: 0px;
         display: flex;
-        left: 20px;
-        top: 2200px;
-
         
 
         }
         .title-description{
         display: flex;
-        left: 20px;
-        top: 2235px;
         }
         .section-image{
         height: 225px;
@@ -42,10 +33,6 @@ div.sesction-gameficacao{
         border-radius: 20px;
         background-color: yellow;
         display: flex;
-        margin: auto;
-        left: 20px;
-        top: 2310px;
-
         }    
     
  
