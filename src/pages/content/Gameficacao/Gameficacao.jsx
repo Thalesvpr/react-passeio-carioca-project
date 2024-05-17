@@ -35,8 +35,8 @@ export const GameficacaoSection = () => {
     <GameficacaoSectionStyled>
 
         <CarrouselMedalha
-                prevButtonLabel = "Previous"
-                nextButtonLabel = "Next"
+                prevButtonLabel = {<BsChevronLeft/>}
+                nextButtonLabel = {<BsChevronRight/>}
                 slides = {Slides}>
                 
                 </CarrouselMedalha>

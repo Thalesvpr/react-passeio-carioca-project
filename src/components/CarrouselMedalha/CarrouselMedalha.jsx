@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import { CarrouselMedalhaStyled } from "./Style";
+import { IconButton } from "../Button/Button";
 
 function CarrouselMedalha(props) {
   const sliderRef = useRef(null);
@@ -32,9 +33,9 @@ function CarrouselMedalha(props) {
 
   return (
     <CarrouselMedalhaStyled>
-        <button className="button" onClick={previous}>
+        <IconButton onClick={previous}>
           {props.prevButtonLabel}
-        </button>
+        </IconButton>
 
       <div className="content">
         <Slider className="slider" ref={sliderRef} {...settings}>
@@ -48,9 +49,9 @@ function CarrouselMedalha(props) {
           ))}
         </Slider>
       </div>
-        <button className="button" onClick={next}>
+        <IconButton onClick={next}>
           {props.nextButtonLabel}
-        </button>
+        </IconButton>
     </CarrouselMedalhaStyled>
   );
 }
