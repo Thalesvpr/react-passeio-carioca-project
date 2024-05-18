@@ -19,10 +19,14 @@ function CarrouselMedalha(props) {
 
   const settings = {
 
-    centerMode: true,
+    centerMode: false,
     showDots: false,
-    infinite: false,
-    slideSpeed: 10,
+    infinite: true,
+    arrows: false,
+    cssEase: 'linear',
+    speed: 400,
+    // initialSlide: 1,
+    // draggable: false,
     
     beforeChange: (current, next) => setSliderIndex(next),
 
@@ -42,7 +46,8 @@ function CarrouselMedalha(props) {
 
           {slides.map((slide, index) => (
             <div className="slide-content">
-                          <div key={index} className={sliderIndex == index ? 'slide-active' : 'slide'}>
+                          <div key={index} className={sliderIndex == index ? 'slide-active': 'slide' + " transition"}>
+
              {slide}
             </div>
             </div>
