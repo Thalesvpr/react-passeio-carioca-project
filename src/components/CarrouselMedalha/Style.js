@@ -13,7 +13,7 @@ gap: 60px;
     .slick-slide > div {
       display: grid;
       place-items: center;
-      width: 80%;
+      width: 140%;
       margin-top: 50px;
       margin: auto;
       height: 500px;
@@ -28,21 +28,28 @@ gap: 60px;
         display: flex;
     }
     div.content{
-        width: 600px;
-    height: 450px;
+        width: 550px;
+        height: 500px;
         /* background-color: #f00; */
-        padding: auto;
+        /* padding: auto; */
     }
     div.slide-content{
-        transition: opacity 1s ease 0.8s, position 1s ease, transform 1s ease;
 
     }
 
+    .transition{
+    }
 
+    div.slide-off{
+      
+      opacity: 0;
+    }
 
     div.slide-active{
+      opacity: 1;
+    transition: opacity 0.5s ease 0.2s, position 0.5s ease, transform 0.5s ease;
 
-    transition: opacity 1s ease 1s, position 1s ease, transform 1s ease;
+
 
     background-color: var(--secundaria);
     padding-inline: 60px;
@@ -87,7 +94,6 @@ gap: 60px;
   }
 
 div.slide{
-    transition: opacity 0.5s ease 0.2s, position 0.5s ease, transform 0.5s ease;
 
     background-color: var(--secundaria);
     border-radius: 20px;
