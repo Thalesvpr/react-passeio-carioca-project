@@ -38,8 +38,38 @@ export const GameficacaoSection = () => {
         }
   
 }}
-      src="/imagens/png/medalha.png">
+      src="/imagens/png/map-badge.png">
     </MedalhaCard>,
+        <MedalhaCard
+        estado="principal"
+        translations = {{
+          pt: {  
+              description :"Complete tel desafio para tal conquista e siga para proxima.",
+              title: ' " Que seja doce " ',
+            },
+          en: {
+            description:"Complete your chalenges",
+            title: ' " Sweet " ',
+          }
+    
+  }}
+        src="/imagens/png/medalha.png">
+      </MedalhaCard>,
+          <MedalhaCard
+          estado="principal"
+          translations = {{
+            pt: {  
+                description :"Complete tel desafio para tal conquista e siga para proxima.",
+                title: ' " Que seja doce " ',
+              },
+            en: {
+              description:"Complete your chalenges",
+              title: ' " Sweet " ',
+            }
+      
+    }}
+          src="/imagens/png/medalha.png">
+        </MedalhaCard>,
 
   ]
   return (
