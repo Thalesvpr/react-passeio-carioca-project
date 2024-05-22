@@ -1,5 +1,6 @@
 import { MedalhaCardPrincipal, MedalhaCardSecundaria} from "./Style"
 import { TranslationsContext } from "../../context/TranslationContext";
+import { useContext } from "react";
 
 const MedalhaCard = (props) => {
   const {locale} = useContext(TranslationsContext);
@@ -22,7 +23,7 @@ const MedalhaCard = (props) => {
         </div>
       </div>
 
-     
+    
     </MedalhaCardPrincipal>
 
     )
