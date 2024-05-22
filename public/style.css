@@ -8,9 +8,13 @@
 
   --primaria: #2734A7;
   --secundaria: #4F5BCA;
+  --secundaria-hover: #404aa4; 
   --destaque: #1B257D;
+  
   --contrast: #000000;
   --neutral: #ffffff;
+  --neutral-hover: #ffffffcb;
+
   
   --background: #ffffff;
 

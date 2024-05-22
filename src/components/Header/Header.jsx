@@ -2,6 +2,7 @@ import { HeaderStyled } from "./Style";
 import { OutlineButton } from "../Button/Button";
 import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
+import LangSelector from "../LangSelector/LangSelector";
 
 export const ContentLogo = styled.div`
  @media (max-width: 768px) {
@@ -41,7 +42,7 @@ export const Nav = styled.div`
     right: 25px;
     bottom: -200px; 
   }
-  display: flex
+  display: flex;
 `;
 
 
@@ -85,6 +86,7 @@ export const Nav = styled.div`
         <OutlineButton>Explore</OutlineButton>
         <OutlineButton>Parcerias</OutlineButton>
         <OutlineButton>Fale Conosco</OutlineButton>
+        <LangSelector/>
         </Nav>
         <BurguerButtom onClick={toggleNav}>
           <div className="burguer-buttom">
