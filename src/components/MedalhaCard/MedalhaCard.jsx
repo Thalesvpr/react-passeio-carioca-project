@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { TranslationsContext } from "../../context/TranslationContext";
 import { MedalhaCardPrincipal, MedalhaCardSecundaria} from "./Style"
 
 const MedalhaCard = (props) => {
+  const {locale} = useContext(TranslationsContext);
+  const texts = props.translations[locale]
 
     return(
     <MedalhaCardPrincipal>
@@ -11,11 +15,11 @@ const MedalhaCard = (props) => {
         </div>
         <div className="content-title">
         <h3 className="title-medalha">Medalha</h3>
-        <h3>{props.title}</h3>
+        <h3>{texts.title}</h3>
 
         </div>
         <div className="content-description">
-        <p>{props.description}</p>
+        <p>{texts.description}</p>
         </div>
       </div>
 

@@ -7,27 +7,39 @@ import { BsChevronLeft } from "react-icons/bs";
 
 export const GameficacaoSection = () => {
 
+
+  
   const Slides = [
     <MedalhaCard
       estado="principal"
-      description="Complete tel desafio para tal conquista e siga para proxima."
-      title=' " Que seja doce " '
+        translations = {{
+          pt: {  
+              description :"Complete tel desafio para tal conquista e siga para proxima.",
+              title: ' " Que seja doce " ',
+            },
+          en: {
+            description:"Complete your chalenges",
+            title: ' " Sweet " ',
+          }
+    
+}}
       src="/imagens/png/medalha.png">
     </MedalhaCard>,
     <MedalhaCard
       estado="principal"
-      description="Complete tel desafio para tal conquista e siga para proxima."
-      title=' " Que seja doce " '
+      translations = {{
+        pt: {  
+            description :"Complete tel desafio para tal conquista e siga para proxima.",
+            title: ' " Que seja doce " ',
+          },
+        en: {
+          description:"Complete your chalenges",
+          title: ' " Sweet " ',
+        }
+  
+}}
       src="/imagens/png/medalha.png">
     </MedalhaCard>,
-
-  ]
-  const slides=[
-    <h1>oi</h1>,
-    <h1>oi</h1>,
-    <h1>oi</h1>,
-    <h1>oi</h1>,
-    <h1>oi</h1>,
 
   ]
   return (
