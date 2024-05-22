@@ -1,8 +1,10 @@
 import { HeaderStyled } from "./Style";
-import { OutlineButton } from "../Button/Button";
+import { NeutralButton, OutlineButton } from "../Button/Button";
 import styled from "styled-components";
 import React, { useState, useEffect } from 'react';
 import LangSelector from "../LangSelector/LangSelector";
+import { BiMenu } from "react-icons/bi";
+import { IoMenu, IoMenuOutline } from "react-icons/io5";
 
 export const ContentLogo = styled.div`
  @media (max-width: 768px) {
@@ -12,10 +14,20 @@ export const ContentLogo = styled.div`
 
 export const BurguerButtom = styled.div`
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  color: var(--primaria);
+  padding: .7rem;
+  border-radius: 5px;
+  background-color: var(--neutral);
   display: none;
   @media (max-width: 768px) {
-    display: block; 
+    display: flex; 
   }
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px; 
+  cursor: pointer;
+  font-size: 2rem;
 `;
 
 const Menu = styled.div`
@@ -29,8 +41,8 @@ const Menu = styled.div`
 export const Nav = styled.div`
   background-color: var(--destaque);
   padding: 10px;
-  padding-inline: 15px;
-  padding-block: 30px;
+  padding-inline: 30px;
+  padding-block: 15px;
   border-radius: 20px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   @media (max-width: 768px) {
@@ -43,6 +55,7 @@ export const Nav = styled.div`
     bottom: -200px; 
   }
   display: flex;
+  gap: 20px;
 `;
 
 
@@ -82,16 +95,15 @@ export const Nav = styled.div`
           </Menu>
         </div>
         <Nav isNavOpen={isNavOpen}>
-        <OutlineButton>Baixe o App</OutlineButton>
         <OutlineButton>Explore</OutlineButton>
         <OutlineButton>Parcerias</OutlineButton>
         <OutlineButton>Fale Conosco</OutlineButton>
+        <NeutralButton>Baixe o App</NeutralButton>
         <LangSelector/>
         </Nav>
         <BurguerButtom onClick={toggleNav}>
-          <div className="burguer-buttom">
-            <OutlineButton></OutlineButton>
-          </div>
+          <IoMenuOutline />
+        
         </BurguerButtom>
       </div>
     </HeaderStyled>

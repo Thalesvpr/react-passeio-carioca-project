@@ -1,24 +1,31 @@
 import React, { useContext, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { TranslationsContext } from '../../context/TranslationContext';
-import { BsTranslate } from "react-icons/bs";
-
+import { MdOutlineTranslate } from 'react-icons/md';
 
 const MenuButton = styled.input`
   display: none;
 `;
 
+const MenuStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+`;
+
 const MenuIcon = styled.label`
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
   padding: .5rem;
   border-radius: 5px;
   background-color: var(--secundaria);
-  &:hover{
+  &:hover {
     background-color: var(--secundaria-hover);
   }
   cursor: pointer;
+  color: var(--neutral);
 `;
 
 const MenuContent = styled.div`
@@ -39,7 +46,7 @@ const MenuContent = styled.div`
     cursor: pointer;
 
     &:hover {
-    color: var(--neutral-hover);
+      color: var(--neutral-hover);
     }
   }
 
@@ -49,7 +56,7 @@ const MenuContent = styled.div`
 `;
 
 const LangSelector = () => {
-  const { _, setLocale } = useContext(TranslationsContext);
+  const { locale, setLocale } = useContext(TranslationsContext);
   const [menuVisible, setMenuVisible] = React.useState(false);
   const menuRef = useRef(null);
 
@@ -68,12 +75,27 @@ const LangSelector = () => {
     };
   }, []);
 
+  const getLanguageName = (locale) => {
+    switch (locale) {
+      case 'en': return 'English';
+      case 'es': return 'Español';
+      case 'fr': return 'Français';
+      case 'de': return 'Deutsch';
+      case 'pt': return 'Português';
+      default: return '';
+    }
+  };
+
   return (
     <div ref={menuRef}>
       <MenuButton id="menu-btn" type="checkbox" checked={menuVisible} onChange={toggleMenu} />
-      <MenuIcon htmlFor="menu-btn">
-      <BsTranslate />
-      </MenuIcon>
+      <MenuStyled>
+        <MenuIcon htmlFor="menu-btn">
+          <MdOutlineTranslate />
+        </MenuIcon>
+        <span>{getLanguageName(locale)}</span>
+      </MenuStyled>
+
       <MenuContent isVisible={menuVisible}>
         <a onClick={() => setLocale('en')}>English</a>
         <a onClick={() => setLocale('es')}>Español</a>
