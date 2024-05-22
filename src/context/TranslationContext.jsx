@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 
 
-export const TranslationsContext = createContext("pt-br");
+export const TranslationsContext = createContext();
 
 
 export const TranslationsProvider = (props) => {

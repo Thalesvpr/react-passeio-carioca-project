@@ -10,8 +10,13 @@ export const GameficacaoSection = () => {
   const Slides = [
     <MedalhaCard
       estado="principal"
-      description="Complete tel desafio para tal conquista e siga para proxima."
-      title=' " Que seja doce " '
+      translations = {{
+        
+          pt:{
+
+          }
+        
+      }}
       src="/imagens/png/medalha.png">
     </MedalhaCard>,
     <MedalhaCard

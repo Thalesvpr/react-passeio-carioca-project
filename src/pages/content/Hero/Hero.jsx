@@ -6,7 +6,12 @@ import { HeroSectionStyled } from "./Style";
 
 export const HeroSection = () => {
   const { locale } = useContext(TranslationsContext);
-  
+  {
+    key: {
+        key2: ""
+    }
+    
+  }
   const translations = {
     en: {
       heroTitle: 'Your passport to explore <span>Rio de Janeiro</span>',
@@ -35,6 +40,8 @@ export const HeroSection = () => {
     }
   };
   
+  
+
   const texts = translations[locale];
   
   return (
@@ -43,6 +50,7 @@ export const HeroSection = () => {
         <img src="/imagens/png/splash_screen.png" alt="Splash screen" />
         <div className="content-text">
           <h2 dangerouslySetInnerHTML={{ __html: texts.heroTitle }}></h2>
+          {/* <h2>{texts.heroTitle}</h2> */}
            {/* 
                 dangerouslySetInnerHTML={{ __html: texts.key }}
                 É pra quando voce tem tags html dentro de uma string

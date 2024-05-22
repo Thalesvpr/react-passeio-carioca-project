@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import { TranslationsContext } from '../../context/TranslationContext';
 import { MdOutlineTranslate } from 'react-icons/md';
@@ -57,7 +57,7 @@ const MenuContent = styled.div`
 
 const LangSelector = () => {
   const { locale, setLocale } = useContext(TranslationsContext);
-  const [menuVisible, setMenuVisible] = React.useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
   const menuRef = useRef(null);
 
   const toggleMenu = () => setMenuVisible(!menuVisible);

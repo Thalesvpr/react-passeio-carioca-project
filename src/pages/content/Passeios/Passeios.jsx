@@ -6,8 +6,34 @@ import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 
 const PasseiosSection = () => {
-    const slides=['1','2', '3', '4', '5']
-
+    const slides=[
+        {
+            img: "/imagens/passeios/castelinho-do-flamengo.jpg",
+            translations: {
+                en: {
+                    title: "Passeio 1",
+                    description: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                pt: {
+                    title: "Passeio 1",
+                    description: "PT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                }
+            }
+        },
+        {
+            img: "/imagens/passeios/palacete-guinle.jpg",
+            translations: {
+                en: {
+                    title: "Passeio 2",
+                    description: " EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                pt: {
+                    title: "Passeio 2",
+                    description: "PT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                }
+            }
+        },
+    ]
 
     return(
     <SectionBase>

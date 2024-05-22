@@ -60,6 +60,7 @@ export const Nav = styled.div`
 
 
   const Header = () => {
+    
   const [isMenuVisible, setMenuVisible] = useState(true);
   const [isNavOpen, setNavOpen] = useState(false);
 

@@ -8,7 +8,7 @@ align-items: center;
 justify-content: center;
 div.slider{
     width: 1000px;
-    height: 450px;
+    height: 600px;
 }
 `
 export {PasseiosSectionStyled}
