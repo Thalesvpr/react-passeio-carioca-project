@@ -16,7 +16,7 @@ gap: 60px;
       margin-top: 50px;
       margin: auto;
       padding: 0px;
-      background-color: red;
+      /* background-color: red; */
       height: 600px !important;
 
     }
@@ -24,7 +24,7 @@ gap: 60px;
         display: none !important;
     }
     .slider{
-        background-color: green;
+        /* background-color: green; */
         display: flex;
         align-items: center;
     }
@@ -34,7 +34,7 @@ gap: 60px;
     }
     div.content{
 
-        background-color: blue;
+        /* background-color: blue; */
 
     }
     div.slide-content{
@@ -42,17 +42,19 @@ gap: 60px;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         img{
             width: 100%;
             height: 350px;
             object-fit: cover;
+            border-radius: 10px;
         }
         .texts{
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center
         }
         
 

@@ -71,26 +71,21 @@ const { locale } = useContext(TranslationsContext);
 const translations = {
     en: { 
         curta: "Enjoy that taste of everyone's favorite trips!",
-        visita: "Visit to The Tour"
     },
     pt: {
         curta: "Curta aquele gostinho dos passeios favoritos da galera!",
-        visita: "Visita ao Passeio"
     }, 
 
     es: {
         curta: "¡Disfruta de ese sabor de las salidas favoritas de todos!",
-        visita: " Visita al Paseo"
     },
 
     de: {
         curta: "Genießen Sie diesen Geschmack der Lieblingsausflüge aller!",
-        visita: "Besuch der Tour"
     },
 
     fr: {
         curta: "Profitez de ce goût des sorties préférées de tout le monde !",
-        visita: "visite à la tournée"
     },
 
 
@@ -112,7 +107,6 @@ const texts = translations[locale];
                         slides={slides}
                     />
                 </div>
-                <h3>{texts.visita}</h3>
             </PasseiosSectionStyled>
         </SectionBase>
     );
