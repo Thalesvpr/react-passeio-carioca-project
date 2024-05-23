@@ -11,12 +11,24 @@ const PasseiosSection = () => {
             img: "/imagens/passeios/castelinho-do-flamengo.jpg",
             translations: {
                 en: {
-                    title: "Passeio 1",
+                    title: "Tour 1",
                     description: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
                 },
                 pt: {
                     title: "Passeio 1",
                     description: "PT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                es: {
+                    title: "Paseo 1",
+                    description: "ES Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                fr: {
+                    title: "Tournée 1",
+                    description: "FR Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                de: {
+                    title: "Tour 1",
+                    description: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
                 }
             }
         },
@@ -24,12 +36,24 @@ const PasseiosSection = () => {
             img: "/imagens/passeios/palacete-guinle.jpg",
             translations: {
                 en: {
-                    title: "Passeio 2",
+                    title: "Tour 2",
                     description: " EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
                 },
                 pt: {
                     title: "Passeio 2",
                     description: "PT Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                es: {
+                    title: "Paseo 2",
+                    description: "ES Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                fr: {
+                    title: "Tournée 2",
+                    description: "FR Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
+                },
+                de: {
+                    title: "Tour 2",
+                    description: "DE Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
                 }
             }
         },

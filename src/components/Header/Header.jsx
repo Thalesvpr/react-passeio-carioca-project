@@ -1,13 +1,15 @@
 import { HeaderStyled } from "./Style";
 import { NeutralButton, OutlineButton } from "../Button/Button";
 import styled from "styled-components";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import LangSelector from "../LangSelector/LangSelector";
 import { BiMenu } from "react-icons/bi";
 import { IoMenu, IoMenuOutline } from "react-icons/io5";
+import { TranslationsContext } from "../../context/TranslationContext";
+
 
 export const ContentLogo = styled.div`
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     display: block; 
   }
 `
@@ -86,6 +88,25 @@ export const Nav = styled.div`
     setNavOpen(!isNavOpen);
   };
 
+  const {locale}= useContext(TranslationsContext);
+
+const translations = {
+  en: {
+    Explore: "Explore",
+    Parcerias: "Partners",
+    FaleConosco: "Contact Us",
+    BaixeoApp: "Download App",
+  },
+  pt: {
+    Explore: "Explore",
+    Parcerias: "Parcerias",
+    FaleConosco: "Fale Conosco",
+    BaixeoApp: "Baixe o App",
+  }
+}
+
+const texts = translations[locale];
+
   return (
     <HeaderStyled>
       <div className="content">
@@ -96,10 +117,10 @@ export const Nav = styled.div`
           </Menu>
         </div>
         <Nav isNavOpen={isNavOpen}>
-        <OutlineButton>Explore</OutlineButton>
-        <OutlineButton>Parcerias</OutlineButton>
-        <OutlineButton>Fale Conosco</OutlineButton>
-        <NeutralButton>Baixe o App</NeutralButton>
+        <OutlineButton>{texts.Explore}</OutlineButton>
+        <OutlineButton>{texts.Parcerias}</OutlineButton>
+        <OutlineButton>{texts.FaleConosco}</OutlineButton>
+        <NeutralButton>{texts.BaixeoApp}</NeutralButton>
         <LangSelector/>
         </Nav>
         <BurguerButtom onClick={toggleNav}>
@@ -111,7 +132,7 @@ export const Nav = styled.div`
   );
 }
 
- 
+
 
 export default Header;
   
