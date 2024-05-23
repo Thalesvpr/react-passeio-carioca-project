@@ -9,7 +9,7 @@ import { TranslationsContext } from "../../../context/TranslationContext";
 const PasseiosSection = () => {
     const slides = [
         {
-            img: "/imagens/passeios/castelinho-do-flamengo.jpg",
+            img: `${process.env.PUBLIC_URL}imagens/passeios/castelinho-do-flamengo.jpg`,
             translations: {
                 en: {
                     title: "Tour 1",
@@ -39,7 +39,7 @@ const PasseiosSection = () => {
             }
         },
         {
-            img: "/imagens/passeios/palacete-guinle.jpg",
+            img: `${process.env.PUBLIC_URL}imagens/passeios/palacete-guinle.jpg`,
             translations: {
                 en: {
                     title: "Tour 2",
