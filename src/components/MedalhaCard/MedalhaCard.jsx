@@ -6,6 +6,25 @@ const MedalhaCard = (props) => {
   const {locale} = useContext(TranslationsContext);
   const texts = props.translations[locale]
 
+  const medalha = {
+    
+    
+    pt:'Medalha',
+    en:'Badge',
+    fr:'Médaille',
+    es:'Medalla',
+    de:'Medaille'
+  
+  
+  
+  
+  } 
+
+
+
+
+  
+
     return(
     <MedalhaCardPrincipal>
       <div className={props.estado}>
@@ -14,7 +33,7 @@ const MedalhaCard = (props) => {
 
         </div>
         <div className="content-title">
-        <h3 className="title-medalha">Medalha</h3>
+        <h3 className="title-medalha">{medalha[locale]}</h3>
         <h3>{texts.title}</h3>
 
         </div>
