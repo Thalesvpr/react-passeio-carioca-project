@@ -35,7 +35,9 @@ module.exports = {
     ),
     new webpack.DefinePlugin(
       {
-        "process.env": JSON.stringify(process.env)
+        "process.env": JSON.stringify(process.env),
+        "process.env.PUBLIC_URL": JSON.stringify(package.homepage),
+
       }
     )
   ],
