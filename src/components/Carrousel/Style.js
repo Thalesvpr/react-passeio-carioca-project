@@ -15,27 +15,48 @@ gap: 60px;
       width: 80%;
       margin-top: 50px;
       margin: auto;
-      height: 500px;
       padding: 0px;
-      background: red;
+      /* background-color: red; */
+      height: 600px !important;
+
     }
     .slick-arrow {
         display: none !important;
     }
     .slider{
-        background-color: #aff;
+        /* background-color: green; */
         display: flex;
+        align-items: center;
+    }
+    .slide{
+        /* background-color: blueviolet; */
+        height: 100% !important;
     }
     div.content{
-        /* height: 600px; */
-        /* width: 100%; */
-        background-color: #f00;
-        padding: auto;
+
+        /* background-color: blue; */
+
     }
     div.slide-content{
-        background-color: #000 !important;
-        height: 300px;
-        width: 300px;;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .texts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center
+        }
+        
 
     }
 

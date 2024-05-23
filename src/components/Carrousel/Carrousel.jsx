@@ -1,8 +1,12 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import Slider from "react-slick";
 import { CarrouselStyled } from "./Style";
+import { IconButton } from "../Button/Button";
+import { TranslationsContext } from "../../context/TranslationContext";
 
 function Carrousel(props) {
+  const {locale} = useContext(TranslationsContext)
+
   const sliderRef = useRef(null);
 
   const next = () => {
@@ -14,7 +18,7 @@ function Carrousel(props) {
   };
 
   const slides = props.slides
-  console.log(slides)
+
 
   const settings = {
 
@@ -23,9 +27,9 @@ function Carrousel(props) {
     infinite: true,
     slideSpeed: 500,
     
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // speed: 2000,
+    // autoplaySpeed: 2000,
 
 
     slidesToShow: 1,
@@ -35,23 +39,31 @@ function Carrousel(props) {
 
   return (
     <CarrouselStyled>
-        <button className="button" onClick={previous}>
+        <IconButton onClick={previous}>
           {props.prevButtonLabel}
-        </button>
+        </IconButton>
 
       <div className="content">
         <Slider className="slider" ref={sliderRef} {...settings}>
 
-          {slides.map((slide, index) => (
+          {slides.map((slide, index) => {
+            const texts = slide.translations[locale]
+            return (
             <div key={index} className="slide">
-              <div className="slide-content">{index}</div>
+              <div className="slide-content">
+                <img src={slide.img} alt={slide.translations.pt.title} />
+                  <div className="texts">
+                  <h2>{texts.title}</h2>
+                <p>{texts.description}</p>
+                  </div>
+              </div>
             </div>
-          ))}
+          )})}
         </Slider>
       </div>
-        <button className="button" onClick={next}>
+        <IconButton onClick={next}>
           {props.nextButtonLabel}
-        </button>
+        </IconButton>
     </CarrouselStyled>
   );
 }

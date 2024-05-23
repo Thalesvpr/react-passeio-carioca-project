@@ -11,12 +11,14 @@ import GameficacaoSection from "./content/Gameficacao/Gameficacao";
 import { LandingStyled } from "./Style";
 
 import AnunciantesGuiaSection from "./content/AnunciantesGuias/AnunciantesGuia";
+import { TranslationsProvider } from "../context/TranslationContext";
 
 
 
 
 const LandingPage = () => (
     <LandingStyled>
+      <TranslationsProvider>
       <Header></Header>
       <div className="hero-dw">
       <HeroSection></HeroSection>
@@ -24,10 +26,11 @@ const LandingPage = () => (
       </div>
       <ExploreSection></ExploreSection>
       <GameficacaoSection></GameficacaoSection>
-      <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <PasseiosSection></PasseiosSection>
+      <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <ContatoSection></ContatoSection>
       <Footer></Footer>
+      </TranslationsProvider>
     </LandingStyled>
 
       
