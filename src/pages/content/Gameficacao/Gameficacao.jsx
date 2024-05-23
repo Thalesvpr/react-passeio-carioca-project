@@ -123,8 +123,8 @@ export const GameficacaoSection = () => {
   return (
     <GameficacaoSectionStyled>
         <div className="gameficacao-title">
-          <div className="gameficacao-text">Curta aquele gostinho dos </div>
-          <div className="gameficacao-description">passeios favoritos da galera! </div>
+          <div className="gameficacao-text"> Jogue e ganhe pontos, para conquistar medalhas incríveis! </div>
+          <div className="gameficacao-description"> </div>
           </div>
       <div className="section-gameficacao">
         <div className="gameficacao-image"> 
