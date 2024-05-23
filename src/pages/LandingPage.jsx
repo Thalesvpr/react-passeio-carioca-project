@@ -26,8 +26,8 @@ const LandingPage = () => (
       </div>
       <ExploreSection></ExploreSection>
       <GameficacaoSection></GameficacaoSection>
-      <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <PasseiosSection></PasseiosSection>
+      <AnunciantesGuiaSection></AnunciantesGuiaSection>
       <ContatoSection></ContatoSection>
       <Footer></Footer>
       </TranslationsProvider>
