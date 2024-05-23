@@ -39,7 +39,10 @@ const FooterStyled = styled.article`
         height: 100px;
         background-color: var(--secundaria);
         border-radius: 16px;
-        margin-bottom: 20px;
+        margin: 20px auto;
+        width: 100%;
+        max-width:116px;
+
     }
     div.content-downloadlogo{
         margin: 10px;
