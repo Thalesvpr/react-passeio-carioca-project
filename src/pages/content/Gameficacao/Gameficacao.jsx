@@ -14,7 +14,7 @@ export const GameficacaoSection = () => {
       estado="principal"
         translations = {{
           pt: {  
-              description :"Complete tel desafio para tal conquista e siga para proxima.",
+              description :"Complete o Desafio para conquistar e siga para próxima!",
               title: ' " Que seja doce " ',
             },
           en: {
@@ -29,7 +29,7 @@ export const GameficacaoSection = () => {
       estado="principal"
       translations = {{
         pt: {  
-            description :"Complete tel desafio para tal conquista e siga para proxima.",
+            description :"Complete o Desafio para conquistar e siga para próxima!",
             title: ' " Que seja doce " ',
           },
         en: {
@@ -44,7 +44,7 @@ export const GameficacaoSection = () => {
         estado="principal"
         translations = {{
           pt: {  
-              description :"Complete tel desafio para tal conquista e siga para proxima.",
+              description :"Complete o Desafio para conquistar e siga para próxima!",
               title: ' " Que seja doce " ',
             },
           en: {
@@ -59,7 +59,7 @@ export const GameficacaoSection = () => {
           estado="principal"
           translations = {{
             pt: {  
-                description :"Complete tel desafio para tal conquista e siga para proxima.",
+                description :"Complete o Desafio para conquistar e siga para próxima!",
                 title: ' " Que seja doce " ',
               },
             en: {
