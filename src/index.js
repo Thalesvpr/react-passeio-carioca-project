@@ -14,6 +14,6 @@ root.render(
       <Routes>
         <Route path="/" element={<LandingPage/>} />
       </Routes>
-    </HashRouter>-
+    </HashRouter>
   </React.StrictMode>
 );
