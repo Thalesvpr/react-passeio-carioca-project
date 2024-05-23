@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-windows": "SET PUBLIC_URL=/&& webpack serve --config ./webpack.config.js --mode development --port 3000",
     "start-linux": "PUBLIC_URL=/ webpack serve --config ./webpack.config.js --mode development --port 3000",
-    "build": "PUBLIC_URL='https://thalesvpr.github.io/react-passeio-carioca-project/' webpack --mode production"
+    "build": "SET PUBLIC_URL='https://thalesvpr.github.io/react-passeio-carioca-project/' webpack --mode production"
   },
   "author": "@EduardoMangeli",
   "license": "MIT",
