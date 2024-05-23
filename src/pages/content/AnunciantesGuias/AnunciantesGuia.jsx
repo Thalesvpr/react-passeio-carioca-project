@@ -151,6 +151,7 @@ const AnunciantesGuiaSection = () => {
     },
 
     de: {
+      parceriasTitle: "Beende deine Herausforderungen, um dieses Ziel zu erreichen und zum nächsten überzugehen.",
       titleLabel: 'Haben Sie daran gedacht, die Sichtbarkeit Ihres Unternehmens zu erhöhen?',
       nameLabel: 'Name:',
       cpfLabel: 'CPF:',
@@ -181,6 +182,7 @@ const AnunciantesGuiaSection = () => {
     },
 
     fr: {
+      parceriasTitle: "Terminez vos défis pour atteindre cet objectif et passer au suivant.",
       titleLabel: 'Avez-vous déjà pensé à augmenter la visibilité de votre entreprise ?',
       nameLabel: 'Nom :',
       cpfLabel: 'CPF :',

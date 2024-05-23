@@ -20,6 +20,18 @@ export const GameficacaoSection = () => {
           en: {
             description:"Complete your chalenges",
             title: ' " Sweet " ',
+          },
+          de: {
+            description: "Vervollständige deine Herausforderungen, um diese Errungenschaft zu erreichen und zum nächsten zu gehen.",
+            title: ' " Süß " ',
+          },
+          fr: {
+            description: "Complétez votre défi pour atteindre cette conquête et passez à la suivante.",
+            title: ' " Doux " ',
+          },
+          es: {
+            description: "Completa tu desafío para tal conquista y sigue al próximo.",
+            title: ' " Dulce " ',
           }
     
 }}
@@ -35,6 +47,18 @@ export const GameficacaoSection = () => {
         en: {
           description:"Complete your chalenges",
           title: ' " Sweet " ',
+        },
+        de: {
+          description: "Vervollständige deine Herausforderungen, um diese Errungenschaft zu erreichen und zum nächsten zu gehen.",
+          title: ' " Süß " ',
+        },
+        fr: {
+          description: "Complétez votre défi pour atteindre cette conquête et passez à la suivante.",
+          title: ' " Doux " ',
+        },
+        es: {
+          description: "Completa tu desafío para tal conquista y sigue al próximo.",
+          title: ' " Dulce " ',
         }
   
 }}
@@ -50,6 +74,18 @@ export const GameficacaoSection = () => {
           en: {
             description:"Complete your chalenges",
             title: ' " Sweet " ',
+          },
+          de: {
+            description: "Vervollständige deine Herausforderungen, um diese Errungenschaft zu erreichen und zum nächsten zu gehen.",
+            title: ' " Süß " ',
+          },
+          fr: {
+            description: "Complétez votre défi pour atteindre cette conquête et passez à la suivante.",
+            title: ' " Doux " ',
+          },
+          es: {
+            description: "Completa tu desafío para tal conquista y sigue al próximo.",
+            title: ' " Dulce " ',
           }
     
   }}
@@ -65,6 +101,18 @@ export const GameficacaoSection = () => {
             en: {
               description:"Complete your chalenges",
               title: ' " Sweet " ',
+            },
+            de: {
+              description: "Vervollständige deine Herausforderungen, um diese Errungenschaft zu erreichen und zum nächsten zu gehen.",
+              title: ' " Süß " ',
+            },
+            fr: {
+              description: "Complétez votre défi pour atteindre cette conquête et passez à la suivante.",
+              title: ' " Doux " ',
+            },
+            es: {
+              description: "Completa tu desafío para tal conquista y sigue al próximo.",
+              title: ' " Dulce " ',
             }
       
     }}
