@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const bg = `${process.env.PUBLIC_URL}imagens/png/bg-anunciantes.png`
+
 const AnunciantesGuiaSectionStyled = styled.article`
   div.Section {
     color: black;
@@ -16,7 +18,7 @@ const AnunciantesGuiaSectionStyled = styled.article`
   }
 
   div.content {
-    background-image: url("/imagens/png/bg-anunciantes.png");
+    background-image: url(${bg});
     color: var(--neutral);
     background-size: auto 100% ;
     background-position: center;
