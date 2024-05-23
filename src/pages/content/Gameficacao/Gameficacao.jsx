@@ -3,6 +3,8 @@ import MedalhaCard from "../../../components/MedalhaCard/MedalhaCard";
 import { GameficacaoSectionStyled } from "./Style";
 import { BsChevronRight } from "react-icons/bs";
 import { BsChevronLeft } from "react-icons/bs";
+import React, { useState, useContext } from "react";
+import { TranslationsContext } from "../../../context/TranslationContext";
 
 
 export const GameficacaoSection = () => {
@@ -118,12 +120,42 @@ export const GameficacaoSection = () => {
     }}
           src="/imagens/png/medalha.png">
         </MedalhaCard>,
-
   ]
+
+  const { locale } = useContext(TranslationsContext);
+  
+  const translations = {
+    en: {
+      Jogue:'Play and earn points to conquer amazing Badges!'
+      
+    },
+    pt: {
+      Jogue:'Jogue e ganhe pontos, para conquistar medalhas incríveis!'
+     
+    },
+
+    es: {
+      Jogue:'¡Juega y gana puntos para conquistar medallas increíbles!'
+      
+    },
+
+    de: {
+      Jogue:'Spiele und verdiene Punkte, um erstaunliche Medaillen zu erobern!'
+     
+    },
+
+    fr: {
+      Jogue:'Jouez et gagnez des points pour conquérir des médailles incroyables !'
+    },
+
+
+  }
+  const texts = translations[locale];
+
   return (
     <GameficacaoSectionStyled>
         <div className="gameficacao-title">
-          <div className="gameficacao-text"> Jogue e ganhe pontos, para conquistar medalhas incríveis! </div>
+          <div className="gameficacao-text"> {texts.Jogue} </div>
           <div className="gameficacao-description"> </div>
           </div>
       <div className="section-gameficacao">
