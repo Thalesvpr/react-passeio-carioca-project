@@ -233,7 +233,7 @@ const AnunciantesGuiaSection = () => {
                 <p className="bottom-paragraph">{texts.cadastre}</p>
                 <p className="p2">{texts.se}</p>
                 <NeutralButton onClick={openGuiaModal}>
-                 <div className="bottom">{texts.ParaGuiasdeTurismo}</div>
+                <div className="bottom">{texts.ParaGuiasdeTurismo}</div>
                 </NeutralButton>
               </div>
               <div className="Anunciantes">

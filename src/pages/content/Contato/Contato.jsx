@@ -14,24 +14,40 @@ const translations = {
     en: {
         contato: "Need to get in touch with us?",
         enviar: "Send",
+        titulo1: "Title",
+        escreva: "Write your text",
+        titulo2: "Title",
     },
     pt: {
         contato: "Precisa entrar em contato com a gente?",
         enviar: "Enviar",
+        titulo1: "Título",
+        escreva: "Escreva seu Título",
+        titulo2: "Título",
     },
     de: {
         contato: "Müssen Sie uns kontaktieren?",
         enviar: "Senden",
+        titulo1: "Titel",
+        escreva: "Schreiben Sie Ihren Text",
+        titulo2: "Titel"
     },
     fr: {
         contato: "Besoin de nous contacter?",
         enviar: "Envoyer",
+        titulo1: "Titre",
+        escreva: "Écrivez votre texte",
+        titulo2: "Titre",
     },
     es: {
         contato: "¿Necesitas ponerte en contacto con nosotros?",
         enviar: "Enviar",
+        titulo1: "Título",
+        escreva: "Escribe tu texto",
+        titulo2: "Título"
     }
 }
+
 
 const texts = translations[locale];
 
@@ -42,12 +58,12 @@ const texts = translations[locale];
                     <div className="content-form">
                         <h1>{texts.contato}</h1>
                         <InputField
-                            placeholder="Titulo"
-                            titulo="Escreva seu texto"
+                            placeholder= {texts.titulo1}
+                            titulo={texts.escreva}
                         />
                         <InputField
-                            placeholder="Titulo"
-                            titulo="Titulo"
+                            placeholder={texts.titulo2}
+                            titulo={texts.titulo2}
                         />
                         <NeutralButton>
                             {texts.enviar}
