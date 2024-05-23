@@ -177,7 +177,7 @@ const AnunciantesGuiaSection = () => {
       comAventureiros: 'mit Abenteurern',
       ParaGuiasdeTurismo: 'Für Reiseführer',
       Aumente: 'Erhöhen Sie die Sichtbarkeit Ihres Unternehmens.',
-      Ofereça: 'Bieten Sie Sonderangebote an, heben Sie sich auf der Karte hervor und greifen Sie auf wertvolle Daten über Ihre potenziellen Kunden zu.',
+      Ofereça: 'Bieten Sie Sonderangebote an und nutzen Sie wertvolle Kundendaten, um sich zu differenzieren.',
       ParaAnunciantes:'Für Werbetreibende',
     },
 
@@ -208,7 +208,7 @@ const AnunciantesGuiaSection = () => {
       comAventureiros: 'avec des aventuriers',
       ParaGuiasdeTurismo: 'Pour les guides touristiques',
       Aumente: 'Augmentez la visibilité de votre entreprise.',
-      Ofereça: 'Proposez des promotions, démarquez-vous sur la carte et accédez à des données précieuses sur vos clients potentiels.',
+      Ofereça: 'Proposez des offres spéciales pour vous démarquer et exploitez des données client précieuses.',
       ParaAnunciantes:'Pour les Annonceurs',
     },
 
