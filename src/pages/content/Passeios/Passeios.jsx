@@ -11,7 +11,7 @@ const PasseiosSection = () => {
             img: "/imagens/passeios/castelinho-do-flamengo.jpg",
             translations: {
                 en: {
-                    title: "Passeio 1",
+                    title: "Tour 1",
                     description: "EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
                 },
                 pt: {
@@ -24,7 +24,7 @@ const PasseiosSection = () => {
             img: "/imagens/passeios/palacete-guinle.jpg",
             translations: {
                 en: {
-                    title: "Passeio 2",
+                    title: "Tour 2",
                     description: " EN Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eget ultricies aliquam, nunc nunc"
                 },
                 pt: {
