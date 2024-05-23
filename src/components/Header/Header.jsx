@@ -130,7 +130,7 @@ const texts = translations[locale];
       <div className="content">
         <div>
           <Menu className="content-logo" isVisible={isMenuVisible}>
-            <img className="logo" src={`${process.env.PUBLIC_URL + "imagens/png/LOGO.png"}`} />
+            <img className="logo" src={`${process.env.PUBLIC_URL}imagens/png/LOGO.png`} />
             <h1>Passeio Carioca</h1>
           </Menu>
         </div>

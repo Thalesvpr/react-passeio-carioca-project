@@ -49,11 +49,11 @@ const ExploreSection = () => {
                 <h1>{texts.exploreTitle}</h1>
             <p>{texts.exploreDescription}</p>
                 </div>
-            <img className="badge" src="/imagens/png/map-badge.png"  />
+            <img className="badge" src={`${process.env.PUBLIC_URL}imagens/png/map-badge.png`}  />
 
             </div>
             <div className="content-cta">
-                <img className="cta-map" src="/imagens/png/map.png"  />
+                <img className="cta-map" src={`${process.env.PUBLIC_URL}imagens/png/map.png`}  />
                 <div className="cta-box">
                     <div className="box-content">
                     <h2>{texts.allInOnePlace}</h2>
