@@ -53,7 +53,7 @@ const ExploreSection = () => {
 
             </div>
             <div className="content-cta">
-                <img className="cta-map" src="/imagens/png/map.png"  />
+                <img className="cta-map" src= {`${process.env.PUBLIC_URL}imagens/png/map.png`} />
                 <div className="cta-box">
                     <div className="box-content">
                     <h2>{texts.allInOnePlace}</h2>

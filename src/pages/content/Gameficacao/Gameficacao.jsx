@@ -37,7 +37,7 @@ export const GameficacaoSection = () => {
           }
     
 }}
-      src="/imagens/png/medalha.png">
+      src= {`${process.env.PUBLIC_URL}imagens/png/medalha.png`}>
     </MedalhaCard>,
     <MedalhaCard
       estado="principal"
@@ -64,7 +64,7 @@ export const GameficacaoSection = () => {
         }
   
 }}
-      src="/imagens/png/map-badge.png">
+      src = {`${process.env.PUBLIC_URL}imagens/png/map-badge.png`}>
     </MedalhaCard>,
         <MedalhaCard
         estado="principal"
@@ -91,7 +91,7 @@ export const GameficacaoSection = () => {
           }
     
   }}
-        src="/imagens/png/medalha.png">
+        src= {`${process.env.PUBLIC_URL}imagens/png/medalha.png`}>
       </MedalhaCard>,
           <MedalhaCard
           estado="principal"
@@ -118,7 +118,7 @@ export const GameficacaoSection = () => {
             }
       
     }}
-          src="/imagens/png/medalha.png">
+          src={`${process.env.PUBLIC_URL}imagens/png/map-badge.png`}>
         </MedalhaCard>,
   ]
 
@@ -160,7 +160,7 @@ export const GameficacaoSection = () => {
           </div>
       <div className="section-gameficacao">
         <div className="gameficacao-image"> 
-          <img src="/imagens/png/explore.png"/>
+          <img src={`${process.env.PUBLIC_URL}imagens/png/explore.png`}/>
         </div>
         <CarrouselMedalha
                 prevButtonLabel = {<BsChevronLeft/>}

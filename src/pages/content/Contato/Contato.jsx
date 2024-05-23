@@ -71,7 +71,7 @@ const texts = translations[locale];
                     </div>
                     {/* <img className="lapa" src={`${process.env.PUBLIC_URL}imagens/png/lapa.png`}/> */}
                 </div>
-                    <img className="lapa" src="/imagens/png/lapa.png" />
+                    <img className="lapa" src={`${process.env.PUBLIC_URL}imagens/png/lapa.png`}/>
             </ContatoSectionStyled>
             </SectionBase>
     )
