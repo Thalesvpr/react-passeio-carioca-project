@@ -50,6 +50,10 @@ div.section-gameficacao{
     font-size: 16px; 
     line-height: 1.5; 
 
+    div.gameficacao-text{
+        
+    }
+
 
 
 

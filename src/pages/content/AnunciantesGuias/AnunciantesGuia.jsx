@@ -151,7 +151,7 @@ const AnunciantesGuiaSection = () => {
     },
 
     de: {
-      parceriasTitle: "Beende deine Herausforderungen, um dieses Ziel zu erreichen und zum nächsten überzugehen.",
+      parceriasTitle: "Überlegen Sie, die Sichtbarkeit Ihres Unternehmens zu erhöhen?",
       titleLabel: 'Haben Sie daran gedacht, die Sichtbarkeit Ihres Unternehmens zu erhöhen?',
       nameLabel: 'Name:',
       cpfLabel: 'CPF:',
