@@ -21,6 +21,24 @@ const Footer = () => {
       Parcerias: "Parcerias",
       FaleConosco: "Fale Conosco",
       BaixeoApp: "Baixe o App",
+    },
+    de: {
+      Explore: "Erkunden",
+      Parcerias: "Partner",
+      FaleConosco: "Kontaktieren Sie uns",
+      BaixeoApp: "App herunterladen",
+    },
+    fr: {
+      Explore: "Explorer",
+      Parcerias: "Partenaires",
+      FaleConosco: "Contactez-nous",
+      BaixeoApp: "Télécharger l'application",
+    },
+    es: {
+      Explore: "Explorar",
+      Parcerias: "Socios",
+      FaleConosco: "Contáctanos",
+      BaixeoApp: "Descargar la App",
     }
   }
   
