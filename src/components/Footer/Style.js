@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const bg = `${process.env.PUBLIC_URL}imagens/svg/footerbg.png`
+
 
 const FooterStyled = styled.article`
     height: 300px;
@@ -26,7 +26,7 @@ const FooterStyled = styled.article`
     
     div.content{
         
-        background-image: url(${bg});
+        background-image: url("imagens/svg/footerbg.png");
         background-size: cover;
         height: 100%;
         display: flex;
