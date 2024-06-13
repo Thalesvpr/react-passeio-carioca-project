@@ -3,7 +3,6 @@ import { FooterStyled, ModalStyled } from "./Style";
 import { OutlineButton, NeutralButton } from "../Button/Button";
 import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
-import { FaWhatsapp } from "react-icons/fa";
 import { TranslationsContext } from "../../context/TranslationContext";
 import { createGlobalStyle } from "styled-components";
 import Modal from './../Modal/Modal';
@@ -99,12 +98,6 @@ const stopPropagation = (event) => {
                 <FaFacebook size={"30px"} />
               </div>
               <a className="link" href="https://www.facebook.com/RioCasasePrediosAntigos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook</a>
-            </div>
-            <div className="socials-links">
-              <div className="boxlinksF">
-                <FaWhatsapp size={"30px"} />
-              </div>
-              <a className="link" href="https://wa.me/5521979240870" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </div>
           </div>
         </div>
