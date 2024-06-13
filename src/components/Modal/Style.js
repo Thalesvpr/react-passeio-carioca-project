@@ -13,8 +13,7 @@ const ModalStyled = styled.div`
   
   
   .modal {
-      overflow: hidden;
-    
+    overflow: hidden;
     position: relative;
     margin: ${(props) => props.side || '200px'};
     background-color: ${(props) => props.bgColor || '#fff' };

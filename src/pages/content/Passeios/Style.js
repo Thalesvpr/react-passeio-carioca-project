@@ -6,6 +6,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+.title{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+}
 div.slider{
     width: 1000px;
     height: 600px;

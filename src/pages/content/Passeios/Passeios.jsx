@@ -142,9 +142,9 @@ const texts = translations[locale];
     return (
         <SectionBase>
             <PasseiosSectionStyled>
-            <SectionTitle>
+            <h1 className="title">
                 {texts.curta}
-            </SectionTitle>
+            </h1>
                 <div className="slider">
                     <Carrousel
                         prevButtonLabel={<BsChevronLeft />}
