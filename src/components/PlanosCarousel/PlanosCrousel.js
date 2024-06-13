@@ -1,31 +1,50 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { IconButton } from '../Button/Button';
 
 const PlanosCarousel = () => {
   const planos = [
     {
       titulo: 'Bronze',
-      descricao: 'Contamos a história do seu estabelecimento (incluindo fotos) e o colocamos em destaque no nosso mapa, por meio de um pin diferenciado com o seu logo. ',
+      descricao: [
+    "> Contamos a história do seu estabelecimento,incluindo fotos.",
+    "> Colocamos seu estabelecimento em destaque no nosso mapa.",
+] ,
       corFundo: '#4F5BCA',
-      corTexto: '#cc9933' 
+      corTexto: '#B9772A' 
     },
     {
       titulo: 'Prata',
-      descricao: ' Vantagem do Plano Bronze, além da inclusão, após a história do estabelecimento, do "Viva essa Experiência", com um link para a sua rede social ou com um QR code, a ser apresentado no seu estabelecimento, que pode incluir um desconto ou um prêmio para o turista ou morador da cidade.',
+      descricao:[
+        "> Inclui vantagens do Plano Bronze.",
+        "> História do seu estabelecimento contada de forma envolvente.",
+        `> Oferecemos um link para sua rede social ou um QR code, a ser apresentado no estabelecimento.`,
+        
+    ],
       corFundo: '#4F5BCA',
-      corTexto: '#c0c0c0'
+      corTexto: '#858585'
     },
     {
       titulo: 'Ouro',
-      descricao: 'Vantagens dos Planos Bronze e Prata, além da inclusão do seu estabelecimento na gameficação do aplicativo, com a possibilidade do turista realizar checkin presencial no local e divulgar em suas redes sociais. Haverá, também, um link para o site do seu estabelecimento ou um QR code, a ser apresentado no local, que pode conter um desconto ou um prêmio para o turista ou morador da cidade.',
+      descricao: [
+        '> Inclui vantagens dos Planos Bronze e Prata.',
+        '> Estabelecimento incluso na gamificação do aplicativo.',
+        '> Link para o site do estabelecimento ou QR code disponível.',
+       
+    ],
       corFundo: '#4F5BCA',
       corTexto: '#ffd700' 
     },
     {
       titulo: 'Diamante',
-      descricao: 'Vantagens dos Planos Bronze, Prata e Ouro, além da criação de uma medalha para o seu estabelecimento, a ser conquistada pelo turista ou morador da cidade, por meio de checkins. Haverá, também, a inclusão do seu estabelecimento em um dos nossos passeios presenciais guiados (sob análise a depender do local e do guia de turismo)',
+      descricao: [
+        "> Inclui vantagens dos Planos Bronze, Prata e Ouro.",
+        "> Criação de uma medalha exclusiva para o seu estabelecimento.",
+        "> Inclusão do seu estabelecimento em um dos nossos passeios presenciais guiados."
+    ],
       corFundo: '#4F5BCA',
-      corTexto: '#87CEEB' 
+      corTexto: '#5EA7C6' 
     }
   ];
 
@@ -41,36 +60,56 @@ const PlanosCarousel = () => {
 
   return (
     <CarouselContainer>
+        <IconButton left onClick={handlePrev}><BsChevronLeft/></IconButton>
       <CarouselSlide corFundo={planos[currentIndex].corFundo} corTexto={planos[currentIndex].corTexto}>
-        <h3>{planos[currentIndex].titulo}</h3>
-        <Descricao>{planos[currentIndex].descricao}</Descricao>
+        <div className='plano'>
+        <h3 >{planos[currentIndex].titulo}</h3></div>
+        <Descricao>{planos[currentIndex].descricao.map((e) => {
+          return <p>{e}</p>
+
+
+        })}</Descricao>
       </CarouselSlide>
-      <NavButton left onClick={handlePrev}>{'<'}</NavButton>
-      <NavButton right onClick={handleNext}>{'>'}</NavButton>
+      <IconButton right onClick={handleNext}><BsChevronRight/></IconButton>
     </CarouselContainer>
   );
 };
 
 const CarouselContainer = styled.div`
   position: relative;
-  width: 458px; /* Largura ajustada conforme necessário */
-  height: 320px; /* Altura ajustada conforme necessário */
+  width: 458px; 
   margin: 0 auto;
   display: flex;
   align-items: center;
+
   justify-content: center;
+
 `;
 
 const CarouselSlide = styled.div`
-  background-color: ${({ corFundo }) => corFundo};
-  color: ${({ corTexto }) => corTexto};
+  background: #6FB5D2;
   padding: 20px;
-  border-radius: 8px;
-  text-align: left;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
-  height: calc(100% - 40px); /* Ajuste para deixar espaço para os botões de navegação */
-  flex: 1; 
+  border-radius: 29px;
+  height: calc(100% - 40px);
+ display: flex;
+ flex-direction: column;
+ align-items: baseline;
+ gap: 20px;
+ margin: 10px;
+  .plano {
+    padding-inline: 12px;
+    padding-block: 7px;
+    background-color: var(--neutral);
+
+    
+    border-radius: 19px;
+    h3 {
+      color: ${({ corTexto }) => corTexto} ;
+      font-weight: 400;
+      font-size: 16px;
+      
+    }
+  }
 `;
 
 const Descricao = styled.p`
