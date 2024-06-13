@@ -117,10 +117,7 @@ const stopPropagation = (event) => {
         <OutlineButton>{texts.Politica}</OutlineButton>
       
         </div>        
-        <Modal isOpen={modalOpen} onClose={closeModal}> 
-          <div className="modalfooter">
-             
-            </div>                    
+        <Modal isOpen={modalOpen} onClose={closeModal}>                  
         </Modal>        
       </div>
     </FooterStyled>
