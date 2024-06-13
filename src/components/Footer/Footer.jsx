@@ -1,48 +1,77 @@
 import React, { useState, useEffect, useContext } from "react";
-import { FooterStyled } from "./Style";
+import { FooterStyled, ModalStyled } from "./Style";
 import { OutlineButton, NeutralButton } from "../Button/Button";
 import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
 import { TranslationsContext } from "../../context/TranslationContext";
+import { createGlobalStyle } from "styled-components";
+import Modal from './../Modal/Modal';
+
+
 
 const Footer = () => {
+  const GlobalStyles = createGlobalStyle`
+  body.modal-open {
+    overflow: hidden;
+  }
+`;
+const [modalOpen, setModalOpen] = useState(false);
+const [opinModal, setOpinModal] = useState(false);
+
+const openModal = () => {
+  setModalOpen(true)
+}
+const closeModal = () => {
+  setModalOpen(false)
+}
+
+const stopPropagation = (event) => {
+  event.stopPropagation();
+};
+
+  const scrollToSection = (sectionId) => {
+    console.log("entrou")
+  const section = document.getElementById(sectionId);
+    console.log(section)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      console.log("correto")
+      
+    }
+  };
 
   const {locale}= useContext(TranslationsContext);
 
   const translations = {
     en: {
-      Explore: "Explore",
-      Parcerias: "Partners",
-      FaleConosco: "Contact Us",
-      BaixeoApp: "Download App",
-    },
-    pt: {
-      Explore: "Explore",
-      Parcerias: "Parcerias",
-      FaleConosco: "Fale Conosco",
-      BaixeoApp: "Baixe o App",
-    },
-    de: {
-      Explore: "Erkunden",
-      Parcerias: "Partner",
-      FaleConosco: "Kontaktieren Sie uns",
-      BaixeoApp: "App herunterladen",
-    },
-    fr: {
-      Explore: "Explorer",
-      Parcerias: "Partenaires",
-      FaleConosco: "Contactez-nous",
-      BaixeoApp: "Télécharger l'application",
-    },
-    es: {
-      Explore: "Explorar",
-      Parcerias: "Socios",
-      FaleConosco: "Contáctanos",
-      BaixeoApp: "Descargar la App",
-    }
+    Priv:"",
+    BaixeoApp: "Download App",
+    Politica:"",
+  },
+  pt: {
+    Priv:"Termos de uso",
+    BaixeoApp: "Baixe o App",
+    Politica:"Políticas de privacidade",
+  },
+  de: {
+    Priv:"",
+    BaixeoApp: "App herunterladen",
+    Politica:"",
+  },
+  fr: {
+    Priv:"",
+    BaixeoApp: "Télécharger l'application",
+    Politica:"",
+  },
+  es: {
+    Priv:"",
+    BaixeoApp: "Descargar la App",
+    Politica:"",
   }
+}
   
   const texts = translations[locale];
+  
 
 
   return(
@@ -58,29 +87,34 @@ const Footer = () => {
           </div>
           <div className="content-socials">
             <div className="socials-links">
-              <div className="boxlinks">
-              <SlSocialInstagram size={"90%"}/>
+              <div className="boxlinksI">
+              <SlSocialInstagram size={"30px"}/>
               </div>
-              <a className="insta">Instagram</a>
+              <a className="link" href="https://www.instagram.com/riocasaseprediosantigos?igsh=eWU0eHJmcThlNmkw" target="_blank" rel="noopener noreferrer">Instagram</a>
             </div>
             <div className="socials-links">
-              <div className="boxlinks">
-                <FaFacebook size={"90%"} />
+              <div className="boxlinksF">
+                <FaFacebook size={"30px"} />
               </div>
-              <a>Facebook</a>
+              <a className="link" href="https://www.facebook.com/RioCasasePrediosAntigos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
           </div>
         </div>
         <div className="content-downloadlogo">
-          <div className="box"></div>
-          <NeutralButton>{texts.BaixeoApp}</NeutralButton>
+        <img className="logo" src={`${process.env.PUBLIC_URL}imagens/png/LOGO.png`} alt="Logo" />
+          <NeutralButton onClick={() => scrollToSection('baixeoapp')}>{texts.BaixeoApp}</NeutralButton>
         </div>
         <div className="nav">
-          <OutlineButton>{texts.BaixeoApp}</OutlineButton>
-          <OutlineButton>{texts.Explore}</OutlineButton>
-          <OutlineButton>{texts.Parcerias}</OutlineButton>
-          <OutlineButton>{texts.FaleConosco}</OutlineButton>
-        </div>
+  
+        <OutlineButton onClick={openModal}>{texts.Priv}</OutlineButton>
+        <OutlineButton>{texts.Politica}</OutlineButton>
+      
+        </div>        
+        <Modal isOpen={modalOpen} onClose={closeModal}> 
+          <div className="modalfooter">
+             
+            </div>                    
+        </Modal>        
       </div>
     </FooterStyled>
   )

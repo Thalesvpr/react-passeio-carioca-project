@@ -58,12 +58,12 @@ const texts = translations[locale];
                     <div className="content-form">
                         <h1>{texts.contato}</h1>
                         <InputField
-                            placeholder= {texts.titulo1}
+                            placeholder= {texts.nome}
                             titulo={texts.escreva}
                         />
                         <InputField
-                            placeholder={texts.titulo2}
-                            titulo={texts.titulo2}
+                            placeholder={texts.email}
+                            titulo={texts.escreva}
                         />
                         <NeutralButton>
                             {texts.enviar}
