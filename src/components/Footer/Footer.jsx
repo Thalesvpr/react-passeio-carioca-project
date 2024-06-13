@@ -3,10 +3,12 @@ import { FooterStyled, ModalStyled } from "./Style";
 import { OutlineButton, NeutralButton } from "../Button/Button";
 import { FaFacebook } from "react-icons/fa";
 import { SlSocialInstagram } from "react-icons/sl";
+import { FaWhatsapp } from "react-icons/fa";
 import { TranslationsContext } from "../../context/TranslationContext";
 import { createGlobalStyle } from "styled-components";
 import Modal from './../Modal/Modal';
 import Privacidade from "../Privacidade/Privacidade";
+import Politicas from './../Politicas/Politicas';
 
 
 
@@ -17,7 +19,7 @@ const Footer = () => {
   }
 `;
 const [modalOpen, setModalOpen] = useState(false);
-const [opinModal, setOpinModal] = useState(false);
+const [modalPOpen, setModalPOpen] = useState(false);
 
 const openModal = () => {
   setModalOpen(true)
@@ -25,6 +27,14 @@ const openModal = () => {
 const closeModal = () => {
   setModalOpen(false)
 }
+const openPModal = () => {
+  setModalPOpen(true)
+}
+const closePModal = () => {
+  setModalPOpen(false)
+}
+
+
 
 const stopPropagation = (event) => {
   event.stopPropagation();
@@ -99,6 +109,12 @@ const stopPropagation = (event) => {
               </div>
               <a className="link" href="https://www.facebook.com/RioCasasePrediosAntigos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
+            <div className="socials-links">
+              <div className="boxlinksF">
+                <FaWhatsapp  size={"30px"} />
+              </div>
+              <a className="link" href="https://wa.me/5521979240870" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
           </div>
         </div>
         <div className="content-downloadlogo">
@@ -108,11 +124,14 @@ const stopPropagation = (event) => {
         <div className="nav">
   
         <OutlineButton onClick={openModal}>{texts.Priv}</OutlineButton>
-        <OutlineButton>{texts.Politica}</OutlineButton>
+        <OutlineButton onClick={openPModal}>{texts.Politica}</OutlineButton>
       
         </div>        
         <Modal isOpen={modalOpen} onClose={closeModal}>  
           <Privacidade></Privacidade>                
+        </Modal>        
+        <Modal isOpen={modalPOpen} onClose={closePModal}>  
+          <Politicas></Politicas>                
         </Modal>        
       </div>
     </FooterStyled>
