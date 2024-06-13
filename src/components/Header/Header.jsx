@@ -108,7 +108,7 @@ const translations = {
     BaixeoApp: "Download App",
     Gameficacao:"Gamification",
     Passeios: "Tours",
-    Anunciantes: "Advertisers"
+    Anunciantes: "Partnerships"
 
   },
   pt: {
@@ -119,7 +119,7 @@ const translations = {
     BaixeoApp: "Baixe o App",
     Gameficacao: "Gameficação",
     Passeios: "Passeios",
-    Anunciantes: "Anunciantes"
+    Anunciantes: "Parcerias"
   },
   de: {
     Inicio:"Anfang ",
@@ -129,7 +129,7 @@ const translations = {
     BaixeoApp: "App herunterladen",
     Gameficacao:"Gamifizierung",
     Passeios: "Touren",
-    Anunciantes: "Werbetreibende"
+    Anunciantes: "Partnerschaften"
   },
   fr: {
     Inicio:"Début ",
@@ -139,7 +139,7 @@ const translations = {
     BaixeoApp: "Télécharger l'application",
     Gameficacao:"Gamification",
     Passeios: "Tours",
-    Anunciantes: "Annonceurs"
+    Anunciantes: "Partenariats"
   },
   es: {
     Inicio:"Inicio",
@@ -149,7 +149,7 @@ const translations = {
     BaixeoApp: "Descargar la App",
     Gameficacao:"Gamificación",
     Passeios: "Paseos",
-    Anunciantes: "Anunciantes"
+    Anunciantes: "Asociaciones"
   }
 }
 
