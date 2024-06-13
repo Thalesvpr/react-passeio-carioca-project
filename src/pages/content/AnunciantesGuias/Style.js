@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const bg = `${process.env.PUBLIC_URL}imagens/png/bg-anunciantes.png`
+const bg = `${process.env.PUBLIC_URL}/imagens/png/bg-anunciantes.png`;
 
 const AnunciantesGuiaSectionStyled = styled.article`
+    height: 100%;
+
   div.Section {
-    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,13 +15,13 @@ const AnunciantesGuiaSectionStyled = styled.article`
   h1.title {
     font-size: 2rem;
     font-weight: 500;
-    margin-block: 50px;
+   
   }
 
   div.content {
     background-image: url(${bg});
     color: var(--neutral);
-    background-size: auto 100% ;
+    background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -29,101 +30,83 @@ const AnunciantesGuiaSectionStyled = styled.article`
     gap: 120px;
     width: 100%;
     height: 610px;
-  
   }
 
   div.Anunciantes {
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 100%;
     text-align: left;
+    background-color: var(--lightBlue);
+    color: white;
+    display: flex;
+    height: 100%;
+    gap: 100px;
+    font-weight: 400;
   }
 
-  div.Guias {
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    text-align: right;
+  
+
+  .HG1,
+  .HG2,
+  .AG1,
+  .AG2 {
+    font-size: 27px;
+    font-weight: 400;
   }
 
-  .HG1, .HG2, .AG1, .AG2 {
-    font-size: 24px;
+  .HG2,
+  .AG2 {
+
   }
 
-  .HG2, .AG2 {
-    margin-bottom: 20px;
+
+
+  .plan-section {
+    flex: 1;
+
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  p {
-    margin-bottom: 20px;
-  }
-
-  div.guia-modal, div.anun-modal {
-    position: fixed;
-    background: white;
-    height: 650px;
-    width: 550px;
-    border-radius: 13px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 999;
-    padding: 20px;
-    overflow-y: auto;
-    padding-inline: 100px;
+  .formcol {
+      width: 400px;
   }
 
   form {
     display: flex;
+    height: 100%;
     flex-direction: column;
-    gap: 15px;
-    color: black;
-  }
-
-  label {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    color: var(--primaria);
-  }
-
-  input, select {
-    margin-top: 5px;
-    padding: 8px;
-    border: 1px solid var(--primaria);
-    border-radius: 5px;
-    font-size: 16px;
-  }
-
-  button[type="submit"] {
-    background-color: var(--primaria);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-
-  button[type="submit"]:hover {
-    background-color: var(--secundaria);
-  }
-
-  div.radio-group {
-    display: flex;
-    gap: 20px;
+    width: 100%; 
     align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+  
+
   }
 
-  .radio-group label {
+  .formpai {
     display: flex;
-    align-items: center;
-    gap: 5px;
+    width: 100%;
+    gap: 130px;
+    justify-content: center;
+    
+
+
   }
 
-  .radio-group input[type="radio"] {
-    accent-color: var(--primaria);
+  .formdetails {
+    width: 100%;
+   
+  }
+
+  .submit {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
   }
 
   .modal-title {
@@ -133,7 +116,57 @@ const AnunciantesGuiaSectionStyled = styled.article`
     margin-bottom: 20px;
   }
 
- 
+  .plan-options {
+    width: 100%; 
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+
+  .plan-options h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+
+  .plan-options ul {
+    list-style-type: none;
+    
+  }
+
+  .plan-options li {
+  
+    font-size: 16px;
+  }
+
+  .plan.bronze {
+    background-color: #cd7f32; /* Cor bronze */
+    border-color: #cd7f32;
+  }
+
+  .plan.prata {
+    background-color: #c0c0c0; /* Cor prata */
+    border-color: #c0c0c0;
+  }
+
+  .plan.ouro {
+    background-color: #ffd700; /* Cor ouro */
+    border-color: #ffd700;
+  }
+
+  .plan.diamante {
+    background-color: #007bff; /* Azul mais intenso para diamante */
+    border-color: #007bff;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+  }
+
+  
 `;
 
 export { AnunciantesGuiaSectionStyled };

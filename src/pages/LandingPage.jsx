@@ -12,6 +12,8 @@ import { LandingStyled } from "./Style";
 
 import AnunciantesGuiaSection from "./content/AnunciantesGuias/AnunciantesGuia";
 import { TranslationsProvider } from "../context/TranslationContext";
+import GuiasSection from "./content/GuiasdeTurismo/Guias";
+
 
 
 
@@ -32,11 +34,12 @@ const LandingPage = () => (
       <section id="gameficacao">
         <GameficacaoSection />
       </section>
-      <section id="passeios">
-        <PasseiosSection />
-      </section>
+      <GuiasSection></GuiasSection>
       <section id="anunciantes">
         <AnunciantesGuiaSection />
+      </section>
+      <section id="passeios">
+        <PasseiosSection />
       </section>
       <section id="faleconosco">
         <ContatoSection />
