@@ -3,6 +3,8 @@ import styled from "styled-components";
 const bg = `${process.env.PUBLIC_URL}/imagens/png/bg-anunciantes.png`;
 
 const AnunciantesGuiaSectionStyled = styled.article`
+    height: 100%;
+
   div.Section {
     color: black;
     display: flex;
@@ -38,6 +40,10 @@ const AnunciantesGuiaSectionStyled = styled.article`
     text-align: left;
     background-color: #5EA7C6;
     color: white;
+    display: flex;
+    height: 100%;
+    gap: 100px;
+    font-weight: 400;
   }
 
   div.Guias {
@@ -52,6 +58,7 @@ const AnunciantesGuiaSectionStyled = styled.article`
   .AG1,
   .AG2 {
     font-size: 27px;
+    font-weight: 400;
   }
 
   .HG2,
@@ -207,6 +214,12 @@ const AnunciantesGuiaSectionStyled = styled.article`
   .plan.diamante {
     background-color: #007bff; /* Azul mais intenso para diamante */
     border-color: #007bff;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
   }
 
   
