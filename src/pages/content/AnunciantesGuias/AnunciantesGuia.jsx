@@ -1,14 +1,22 @@
 import React, { useState, useContext } from "react";
 import { NeutralButton } from "../../../components/Button/Button";
-import Modal from "../../../components/Modal/Modal";
+import Modal from "../../../components/Modal/Modal"; // Certifique-se de que este componente está importado corretamente
 import { TranslationsContext } from "../../../context/TranslationContext";
 import { AnunciantesGuiaSectionStyled } from "./Style";
 import PlanosCarousel from "../../../components/PlanosCarousel/PlanosCrousel";
 import SectionBase from "../../../components/SectionBase/SectionBase";
 
-
 const AnunciantesSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    nome: '',
+    email: '',
+    cep: '',
+    estado: '',
+    cidade: '',
+    endereco: ''
+  });
+
   const { locale } = useContext(TranslationsContext);
   const translations = {
     en: {
@@ -158,46 +166,74 @@ const AnunciantesSection = () => {
       Ofereça: 'Proposez des promotions, démarquez-vous sur la carte et accédez à des données précieuses sur vos clients potentiels.',
       ParaAnunciantes:'Pour les Annonceurs',
     },
-
-
-
   };
 
   const texts = translations[locale];
 
   const openModalHandler = () => {
     setIsModalOpen(true);
-    
   };
 
   const closeModalHandler = () => {
     setIsModalOpen(false);
+  };
 
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData); // Exemplo simples de exibir os dados no console
+    // Aqui você pode implementar a lógica para enviar os dados do formulário
+    closeModalHandler(); // Fecha o modal após enviar o formulário
   };
 
   return (
     <SectionBase>
-    <AnunciantesGuiaSectionStyled>
-      <div className="Anunciantes">
-        <div className="texts">
-        <h1 className="AG1">{texts.ConecteSuaMarca}</h1>
-        <h1 className="AG2">{texts.comAventureiros}</h1>
-        <p className="AP1">{texts.Aumente}</p>
-        <p>{texts.Ofereça}</p>
-        <NeutralButton onClick = {openModalHandler}>{texts.ParaAnunciantes}</NeutralButton>
+      <AnunciantesGuiaSectionStyled>
+        <div className="Anunciantes">
+          <div className="texts">
+            <h1 className="AG1">{texts.ConecteSuaMarca}</h1>
+            <h1 className="AG2">{texts.comAventureiros}</h1>
+            <p className="AP1">{texts.Aumente}</p>
+            <p>{texts.Ofereça}</p>
+            <NeutralButton onClick={openModalHandler}>{texts.ParaAnunciantes}</NeutralButton>
+          </div>
+          <Modal isOpen={isModalOpen} onClose={closeModalHandler}>
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="nome">{texts.nameLabel}</label>
+              <input type="text" id="nome" name="nome" value={formData.nome} onChange={handleInputChange} />
+
+              <label htmlFor="email">{texts.emailLabel}</label>
+              <input type="email" id="email" name="email" value={formData.email} onChange={handleInputChange} />
+
+              <label htmlFor="cep">{texts.cepLabel}</label>
+              <input type="text" id="cep" name="cep" value={formData.cep} onChange={handleInputChange} />
+
+              <label htmlFor="estado">{texts.estadoLabel}</label>
+              <input type="text" id="estado" name="estado" value={formData.estado} onChange={handleInputChange} />
+
+              <label htmlFor="cidade">{texts.cidadeLabel}</label>
+              <input type="text" id="cidade" name="cidade" value={formData.cidade} onChange={handleInputChange} />
+
+              <label htmlFor="endereco">{texts.enderecoLabel}</label>
+              <input type="text" id="endereco" name="endereco" value={formData.endereco} onChange={handleInputChange} />
+
+              <button type="submit">{texts.submitButton}</button>
+            </form>
+          </Modal>
+          <div className="Planos">
+            <PlanosCarousel>
+              {/* Conteúdo do carousel */}
+            </PlanosCarousel>
+          </div>
         </div>
-        <Modal isOpen = {isModalOpen} onClose = {closeModalHandler}>
-          <p>a</p>
-        </Modal>
-      <div className="Planos">
-        <PlanosCarousel>
-          
-        </PlanosCarousel>
-        
-      </div>
-        
-      </div>
-    </AnunciantesGuiaSectionStyled>
+      </AnunciantesGuiaSectionStyled>
     </SectionBase>
   );
 };
