@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { TranslationsContext } from "../../context/TranslationContext";
 import { createGlobalStyle } from "styled-components";
 import Modal from './../Modal/Modal';
+import Privacidade from "../Privacidade/Privacidade";
 
 
 
@@ -117,7 +118,8 @@ const stopPropagation = (event) => {
         <OutlineButton>{texts.Politica}</OutlineButton>
       
         </div>        
-        <Modal isOpen={modalOpen} onClose={closeModal}>                  
+        <Modal isOpen={modalOpen} onClose={closeModal}>  
+          <Privacidade></Privacidade>                
         </Modal>        
       </div>
     </FooterStyled>
