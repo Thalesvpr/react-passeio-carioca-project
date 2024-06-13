@@ -9,9 +9,14 @@ import {
 } from "./Style";
 
 export const OutlineButton = (props) => {
+  const handleClick = () => {
+    if (props.onClick) {
+      props.onClick();
+    }
+  };
   return (
     <OutlineButtonStyled>
-      <button>{props.children}</button>
+      <button onClick={handleClick}>{props.children}</button>
     </OutlineButtonStyled>
   );
 };
