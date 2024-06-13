@@ -24,7 +24,10 @@ export default function Modal(props) {
     <ModalStyled>
       <div className="modal">
         <button className="close" onClick={props.onClose}><BiX /></button>
+        <div className="modal-content">
+
         {props.children}
+        </div>
       </div>
     </ModalStyled>
   );

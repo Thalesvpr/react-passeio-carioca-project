@@ -10,14 +10,23 @@ const ModalStyled = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
+  
   .modal {
+      overflow: hidden;
+    
     position: relative;
     margin: ${(props) => props.side || '200px'};
     background: #fff;
     width: 100%;
     height: ${(props) => `calc(100vh - ${props.side || '200px'})`};
     border-radius: 25px;
+    }
+    .modal-content{
+        height: 100%;
+        width:90%;
+        margin: 0 auto;
+        overflow: auto;
   }
   .close{
     position: absolute;
