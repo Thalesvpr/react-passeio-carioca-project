@@ -34,12 +34,12 @@ const LandingPage = () => (
       <section id="gameficacao">
         <GameficacaoSection />
       </section>
-      <section id="passeios">
-        <PasseiosSection />
-      </section>
       <GuiasSection></GuiasSection>
       <section id="anunciantes">
         <AnunciantesGuiaSection />
+      </section>
+      <section id="passeios">
+        <PasseiosSection />
       </section>
       <section id="faleconosco">
         <ContatoSection />

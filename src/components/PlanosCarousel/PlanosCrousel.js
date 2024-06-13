@@ -44,7 +44,7 @@ const PlanosCarousel = () => {
         "> Inclusão do seu estabelecimento em um dos nossos passeios presenciais guiados."
     ],
       corFundo: '#4F5BCA',
-      corTexto: '#5EA7C6' 
+      corTexto: 'var(--lightBlue)' 
     }
   ];
 

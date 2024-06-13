@@ -38,7 +38,7 @@ const AnunciantesGuiaSectionStyled = styled.article`
     align-items: center;
     width: 100%;
     text-align: left;
-    background-color: #5EA7C6;
+    background-color: var(--lightBlue);
     color: white;
     display: flex;
     height: 100%;

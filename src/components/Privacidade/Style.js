@@ -5,18 +5,18 @@ const PrivacidadeStyled = styled.div`
         color: black;
         h1 {
             text-align: center;
-        font-weight: 400;
+            font-weight: 400;
             
         }
         h2 {
             font-size: 20px;
             margin-top: 20px;
-        font-weight: 400;
+            font-weight: 400;
 
         }
         p {
             text-indent: 20px;
-        font-weight: 400;
+            font-weight: 400;
 
         }
         

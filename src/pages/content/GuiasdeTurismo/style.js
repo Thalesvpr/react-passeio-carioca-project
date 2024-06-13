@@ -7,7 +7,7 @@ export const GuiasSectionStyled = styled.div`
   padding-top: 60px;
   height: 100%; 
 
-  background-color: #5EA7C6;
+  background-color: var(--lightBlue);
   .Guias {
     padding: 16px;
     color: white;
