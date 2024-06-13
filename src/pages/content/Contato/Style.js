@@ -15,7 +15,7 @@ position: relative;
 }
 div.section-content {display: flex;
     color: var(--neutral);
-    background-color: var(--secundaria);
+    background-color: #5EA7C6;
     justify-content: space-between;
     padding: 120px;
     border-radius: 20px;

@@ -150,7 +150,5 @@ const texts = translations[locale];
   );
 }
 
-
-
 export default Header;
   
