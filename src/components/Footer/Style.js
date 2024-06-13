@@ -1,6 +1,17 @@
 import styled from "styled-components";
 
+const ModalStyled = styled.div`
 
+background: rgba(0, 0, 0, 0.4);
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 20;
+top: 0;
+div.modal {
+   
+ }
+ `
 
 const FooterStyled = styled.article`
     height: 300px;
@@ -15,13 +26,17 @@ const FooterStyled = styled.article`
     }
     div.nav{
         display: flex;
+        padding-right: 100px;
+        gap: 30px
         
     }
     div.socials-links{
         margin: 10px;
         display: flex;
         align-items: center;
-        
+        gap: 10px;
+        line-height: 0;
+        margin-bottom: 0;
     }
     
     div.content{
@@ -55,6 +70,7 @@ const FooterStyled = styled.article`
         width: 48px;
         border-radius: 13px;
         margin-right: 10px;
+        
     }
     div.content-marcadagua{
         color: var(--neutral);
@@ -80,19 +96,27 @@ const FooterStyled = styled.article`
         display: flex;
         
     }
-
-    .insta {
-        margin-bottom: 4px;
-        
+    .link {
+  color: white;
+  text-decoration: none; 
+}
+    .logo {
+        height: 134px;
+        width: auto;
+        margin-bottom: 25px;
     }
-        
-
-        
-        
+     .modalfooter {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+     }
         
 `
 
 
 
 
-export {FooterStyled}
+export {FooterStyled,ModalStyled}

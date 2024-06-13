@@ -17,26 +17,33 @@ import { TranslationsProvider } from "../context/TranslationContext";
 
 
 const LandingPage = () => (
-    <LandingStyled>
-      <TranslationsProvider>
-      <Header></Header>
-      <div className="hero-dw">
-      <HeroSection></HeroSection>
-      <BaixeAppSection></BaixeAppSection>
+  <LandingStyled>
+    <TranslationsProvider>
+      <Header />
+      <div className="hero-dw" id="hero">
+        <HeroSection />
+        <section id="baixeoapp">
+        <BaixeAppSection/>
+        </section>
       </div>
-      <ExploreSection></ExploreSection>
-      <GameficacaoSection></GameficacaoSection>
-      <PasseiosSection></PasseiosSection>
-      <AnunciantesGuiaSection></AnunciantesGuiaSection>
-      <ContatoSection></ContatoSection>
-      <Footer></Footer>
-      </TranslationsProvider>
-    </LandingStyled>
-
-      
-    
-
-
-)
+      <section id="explore">
+        <ExploreSection />
+      </section>
+      <section id="gameficacao">
+        <GameficacaoSection />
+      </section>
+      <section id="passeios">
+        <PasseiosSection />
+      </section>
+      <section id="anunciantes">
+        <AnunciantesGuiaSection />
+      </section>
+      <section id="faleconosco">
+        <ContatoSection />
+      </section>
+      <Footer />
+    </TranslationsProvider>
+  </LandingStyled>
+);
 
 export default LandingPage;

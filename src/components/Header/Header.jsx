@@ -1,7 +1,7 @@
 import { HeaderStyled } from "./Style";
 import { NeutralButton, OutlineButton } from "../Button/Button";
 import styled from "styled-components";
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useRef } from 'react';
 import LangSelector from "../LangSelector/LangSelector";
 import { BiMenu } from "react-icons/bi";
 import { IoMenu, IoMenuOutline } from "react-icons/io5";
@@ -60,11 +60,20 @@ export const Nav = styled.div`
   gap: 20px;
 `;
 
-
   const Header = () => {
-    
   const [isMenuVisible, setMenuVisible] = useState(true);
   const [isNavOpen, setNavOpen] = useState(false);
+  
+  const scrollToSection = (sectionId) => {
+    console.log("entrou")
+  const section = document.getElementById(sectionId);
+    console.log(section)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      console.log("correto")
+      
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -92,63 +101,88 @@ export const Nav = styled.div`
 
 const translations = {
   en: {
+    Inicio:"Home",
     Explore: "Explore",
     Parcerias: "Partners",
     FaleConosco: "Contact Us",
     BaixeoApp: "Download App",
+    Gameficacao:"Gamification",
+    Passeios: "Tours",
+    Anunciantes: "Advertisers"
+
   },
   pt: {
+    Inicio: "Inicio",
     Explore: "Explore",
     Parcerias: "Parcerias",
     FaleConosco: "Fale Conosco",
     BaixeoApp: "Baixe o App",
+    Gameficacao: "Gameficação",
+    Passeios: "Passeios",
+    Anunciantes: "Anunciantes"
   },
   de: {
+    Inicio:"Anfang ",
     Explore: "Erkunden",
     Parcerias: "Partner",
     FaleConosco: "Kontaktieren Sie uns",
     BaixeoApp: "App herunterladen",
+    Gameficacao:"Gamifizierung",
+    Passeios: "Touren",
+    Anunciantes: "Werbetreibende"
   },
   fr: {
+    Inicio:"Début ",
     Explore: "Explorer",
     Parcerias: "Partenaires",
     FaleConosco: "Contactez-nous",
     BaixeoApp: "Télécharger l'application",
+    Gameficacao:"Gamification",
+    Passeios: "Tours",
+    Anunciantes: "Annonceurs"
   },
   es: {
+    Inicio:"Inicio",
     Explore: "Explorar",
     Parcerias: "Socios",
     FaleConosco: "Contáctanos",
     BaixeoApp: "Descargar la App",
+    Gameficacao:"Gamificación",
+    Passeios: "Paseos",
+    Anunciantes: "Anunciantes"
   }
 }
 
 const texts = translations[locale];
 
-  return (
-    <HeaderStyled>
-      <div className="content">
-        <div>
-          <Menu className="content-logo" isVisible={isMenuVisible}>
-            <img className="logo" src={`${process.env.PUBLIC_URL}imagens/png/LOGO.png`} />
-            <h1>Passeio Carioca</h1>
-          </Menu>
-        </div>
-        <Nav isNavOpen={isNavOpen}>
-        <OutlineButton>{texts.Explore}</OutlineButton>
-        <OutlineButton>{texts.Parcerias}</OutlineButton>
-        <OutlineButton>{texts.FaleConosco}</OutlineButton>
-        <NeutralButton>{texts.BaixeoApp}</NeutralButton>
-        <LangSelector/>
-        </Nav>
-        <BurguerButtom onClick={toggleNav}>
-          <IoMenuOutline />
-        
-        </BurguerButtom>
+return (
+  <HeaderStyled>
+    <div className="content">
+      <div>
+        <Menu className="content-logo" isVisible={isMenuVisible}>
+          <img className="logo" src={`${process.env.PUBLIC_URL}imagens/png/LOGO.png`} alt="Logo" />
+          <h1>Passeio Carioca</h1>
+        </Menu>
       </div>
-    </HeaderStyled>
-  );
+      <Nav isNavOpen={isNavOpen}>
+        {!isMenuVisible ? <OutlineButton onClick={() => scrollToSection('hero')}>{texts.Inicio}</OutlineButton>:""}
+        <OutlineButton onClick={() => scrollToSection('explore')}>{texts.Explore}</OutlineButton>
+        <OutlineButton onClick={() => scrollToSection('gameficacao')}>{texts.Gameficacao}</OutlineButton>
+        <OutlineButton onClick={() => scrollToSection('passeios')}>{texts.Passeios}</OutlineButton>
+        <OutlineButton onClick={() => scrollToSection('anunciantes')}>{texts.Anunciantes}</OutlineButton>
+        <OutlineButton onClick={() => scrollToSection('faleconosco')}>{texts.FaleConosco}</OutlineButton>
+
+        <NeutralButton onClick={() => scrollToSection('baixeoapp')}>{texts.BaixeoApp}</NeutralButton>
+        <LangSelector/>
+      </Nav>
+      <BurguerButtom onClick={toggleNav}>
+        <IoMenuOutline />
+      </BurguerButtom>
+    </div>
+  </HeaderStyled>
+);
 }
+
 
 
 
