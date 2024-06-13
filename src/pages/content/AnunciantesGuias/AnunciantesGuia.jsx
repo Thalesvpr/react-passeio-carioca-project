@@ -4,6 +4,7 @@ import Modal from "../../../components/Modal/Modal";
 import { TranslationsContext } from "../../../context/TranslationContext";
 import { AnunciantesGuiaSectionStyled } from "./Style";
 import PlanosCarousel from "../../../components/PlanosCarousel/PlanosCrousel";
+import SectionBase from "../../../components/SectionBase/SectionBase";
 
 
 const AnunciantesSection = () => {
@@ -175,14 +176,16 @@ const AnunciantesSection = () => {
   };
 
   return (
+    <SectionBase>
     <AnunciantesGuiaSectionStyled>
       <div className="Anunciantes">
+        <div className="texts">
         <h1 className="AG1">{texts.ConecteSuaMarca}</h1>
         <h1 className="AG2">{texts.comAventureiros}</h1>
         <p className="AP1">{texts.Aumente}</p>
         <p>{texts.Ofereça}</p>
-        
         <NeutralButton onClick = {openModalHandler}>{texts.ParaAnunciantes}</NeutralButton>
+        </div>
         <Modal isOpen = {isModalOpen} onClose = {closeModalHandler}>
           <p>a</p>
         </Modal>
@@ -195,6 +198,7 @@ const AnunciantesSection = () => {
         
       </div>
     </AnunciantesGuiaSectionStyled>
+    </SectionBase>
   );
 };
 
