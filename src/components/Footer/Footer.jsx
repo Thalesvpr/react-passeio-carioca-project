@@ -86,7 +86,7 @@ const stopPropagation = (event) => {
 
 
   return(
-    <FooterStyled>
+    <FooterStyled bgUrl={`"${process.env.PUBLIC_URL}imagens/svg/FooterBG.png"`}>
       <div className="content">
         <div className="content-marcadaguasocials">
           <div className="content-marcadagua">

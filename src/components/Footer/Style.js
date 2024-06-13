@@ -41,7 +41,7 @@ const FooterStyled = styled.article`
     
     div.content{
         
-        background-image: url("imagens/svg/footerbg.png");
+        background-image: url(${(props) => (props.bgUrl)});
         background-size: cover;
         height: 100%;
         display: flex;
