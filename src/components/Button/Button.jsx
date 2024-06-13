@@ -30,7 +30,7 @@ export const NeutralButton = (props) => {
 
   return (
     <NeutralButtonStyled>
-      <button onClick={handleClick}>{props.children}</button>
+      <button type={props.type} onClick={handleClick}>{props.children}</button>
     </NeutralButtonStyled>
   );
 
