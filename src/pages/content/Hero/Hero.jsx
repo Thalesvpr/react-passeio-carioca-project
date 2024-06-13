@@ -47,7 +47,7 @@ export const HeroSection = () => {
   return (
     <SectionBase>
       <HeroSectionStyled>
-        <img src="{process.env.PUBLIC_URL}/imagens/png/splash_screen.png" alt="Splash screen" />
+        <img src={`${process.env.PUBLIC_URL}/imagens/png/splash_screen.png`} alt="Splash screen" />
         <div className="content-text">
           <h2 dangerouslySetInnerHTML={{ __html: texts.heroTitle }}></h2>
           {/* <h2>{texts.heroTitle}</h2> */}
