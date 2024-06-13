@@ -186,6 +186,10 @@ const AnunciantesGuiaSectionStyled = styled.article`
     margin-bottom: 10px;
   }
 
+  .pmodal {
+    color: black;
+  }
+
   .plan-options ul {
     list-style-type: none;
     padding-left: 0;
