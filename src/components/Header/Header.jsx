@@ -41,7 +41,7 @@ const Menu = styled.div`
 `;
 
 export const Nav = styled.div`
-  background-color: var(--destaque);
+  background-color: var(--lightBlue);
   padding: 10px;
   padding-inline: 30px;
   padding-block: 15px;
@@ -54,7 +54,7 @@ export const Nav = styled.div`
     gap: 20px;
     position: absolute;
     right: 25px;
-    bottom: -200px; 
+    top: 150px; 
   }
   display: flex;
   gap: 20px;
