@@ -17,7 +17,7 @@ const ModalStyled = styled.div`
     
     position: relative;
     margin: ${(props) => props.side || '200px'};
-    background: #fff;
+    background-color: ${(props) => props.bgColor || '#fff' };
     width: 100%;
     height: ${(props) => `calc(100vh - ${props.side || '200px'})`};
     border-radius: 25px;

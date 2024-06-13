@@ -21,7 +21,7 @@ export default function Modal(props) {
   }
 
   return (
-    <ModalStyled>
+    <ModalStyled bgColor={props.backgroundColor}>
       <div className="modal">
         <button className="close" onClick={props.onClose}><BiX /></button>
         <div className="modal-content">
