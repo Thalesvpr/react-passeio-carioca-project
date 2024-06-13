@@ -8,7 +8,9 @@ export const InputField = (props) => {
             {props.titulo}
         </p>
         <input
-
+            name = {props.name}
+            onChange={(e) =>props.onChange(e)}           
+            value = {props.value}
             type = "text"
             placeholder = {props.placeholder}        
         
