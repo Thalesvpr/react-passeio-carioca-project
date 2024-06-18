@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { TranslationsContext } from "../../../context/TranslationContext";
 
 
+
 export const BaixeAppSection = () => {
     const {locale} = useContext(TranslationsContext)
     
@@ -66,6 +67,9 @@ export const BaixeAppSection = () => {
                     <p>
                         {texts.description}
                     </p>
+                    <img src={`${process.env.PUBLIC_URL}/imagens/png/qr-code-download.png`} 
+                    alt="QR Code Download" />
+
                 </div>
                 <div className="content-cta">
                     <div className="cta-download">
