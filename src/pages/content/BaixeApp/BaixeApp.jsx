@@ -74,7 +74,7 @@ export const BaixeAppSection = () => {
                     <p>
                         {texts.description}
                     </p>
-                    <img src={`${process.env.PUBLIC_URL}/imagens/png/qr-code-download-app.png`} 
+                    <img src={`${process.env.PUBLIC_URL}imagens/png/qr-code-download-app.png`} 
                     alt="QR Code Download" 
                     onClick={()=>navigateTo('/download-app-link')}
                     

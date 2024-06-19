@@ -11,7 +11,6 @@ ReactDOM.render(
       <Route path="/" element={<LandingPage />} />
       <Route path="/download-app-link" element={<DownloadAppPage />} />
       <Route path="*" element={<NotFoundPage />} />
-
     </Routes>
   </Router>,
   document.getElementById('root')
