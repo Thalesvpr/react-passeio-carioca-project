@@ -23,11 +23,12 @@ const LandingPage = () => (
     <TranslationsProvider>
       <Header />
       <div className="hero-dw" id="hero">
-        
+
         <HeroSection />
         <section id="baixeoapp">
         <BaixeAppSection/>
         </section>
+        <img className="prediohome" src={`${process.env.PUBLIC_URL}imagens/png/prediohome.png`}/>
       </div>
       <section id="explore">
         <ExploreSection />

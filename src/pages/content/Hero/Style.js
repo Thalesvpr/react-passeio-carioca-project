@@ -12,9 +12,9 @@ padding-inline: 100px;
 .content-cta{
 
 }
-img{
+.splash_screen{
     position: absolute;
-    width: 20%;
+    width: 300px;
     height: auto;
     right: 160px;
     top: 210px
@@ -35,6 +35,16 @@ div.content-text{
     h2{
         font-size: 1.5rem;
     }
+
+    
+
+}
+.blackbirds{
+    position: absolute;
+    width: 300px;
+    height: auto;
+
+    bottom: 0;
 
 }
 `
