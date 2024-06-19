@@ -38,6 +38,7 @@ module.exports = {
       {
         "process.env": JSON.stringify(process.env),
         "process.env.PUBLIC_URL": JSON.stringify(package.homepage)
+        
 
       }
     )

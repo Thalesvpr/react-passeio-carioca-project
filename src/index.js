@@ -8,16 +8,16 @@ import NotFoundPage from './pages/PageNotFound/NotFoundPage';
 
 
 
-const basename = process.env.REACT_APP_DEV ? process.env.PUBLIC_URL : undefined;
-console.log(process.env.REACT_APP_DEV ? process.env.PUBLIC_URL : undefined)
+const basename = true ? process.env.PUBLIC_URL : "/";
+console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
   <Router
-
+  
     basename={basename}
   >
     <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/download-app-link" element={<DownloadAppPage />} />
+      <Route path="" element={<LandingPage />} />
+      <Route path="download-app-link" element={<DownloadAppPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </Router>,
