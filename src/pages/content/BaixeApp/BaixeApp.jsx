@@ -4,12 +4,11 @@ import { AndroidLogo, AppleLogo } from './../../../components/Icons/Icons';
 import { NeutralButton } from "../../../components/Button/Button";
 import { useContext } from "react";
 import { TranslationsContext } from "../../../context/TranslationContext";
+import { useNavigate } from "react-router-dom";
 
 
 
 export const BaixeAppSection = () => {
-    const {locale} = useContext(TranslationsContext)
-    
     const translations = {
         en: {
           title: 'Start Your Adventure in Rio Right Now',
@@ -47,6 +46,14 @@ export const BaixeAppSection = () => {
           extraText: 'Navegue por histórias fascinantes, participe de jogos interativos e conecte-se com guias locais.'
         }
       };
+    const {locale} = useContext(TranslationsContext)
+    
+    const navigate = useNavigate();
+
+    const navigateTo = (path) => {
+      navigate(path);
+    };
+
       const texts = translations[locale]
     return(
     <SectionBase>
@@ -67,8 +74,12 @@ export const BaixeAppSection = () => {
                     <p>
                         {texts.description}
                     </p>
-                    <img src={`${process.env.PUBLIC_URL}/imagens/png/qr-code-download.png`} 
-                    alt="QR Code Download" />
+                    <img src={`${process.env.PUBLIC_URL}/imagens/png/qr-code-download-app.png`} 
+                    alt="QR Code Download" 
+                    onClick={()=>navigateTo('/download-app-link')}
+                    
+                    
+                    />
 
                 </div>
                 <div className="content-cta">

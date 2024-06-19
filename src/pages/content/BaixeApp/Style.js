@@ -6,7 +6,10 @@ const BaixeAppSectionStyled = styled.article`
     justify-content: center;
     height: 100%;
     color: var(--neutral);
-
+    img{
+        height: 100px;
+        width: 100px;
+    }
     div.content {
         display: flex;
         flex-direction: column;
