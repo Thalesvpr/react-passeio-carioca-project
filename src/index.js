@@ -16,8 +16,8 @@ ReactDOM.render(
     basename={basename}
   >
     <Routes>
-      <Route path="" element={<LandingPage />} />
-      <Route path="download-app-link" element={<DownloadAppPage />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/download-app-link" element={<DownloadAppPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   </Router>,
