@@ -8,7 +8,7 @@ import NotFoundPage from './pages/PageNotFound/NotFoundPage';
 
 
 
-const basename = true ? process.env.PUBLIC_URL : "/";
+const basename = true ? "https://thalesvpr.github.io/react-passeio-carioca-project/" : "/";
 console.log(process.env.PUBLIC_URL)
 ReactDOM.render(
   <Router
