@@ -7,20 +7,6 @@ import NotFoundPage from './pages/PageNotFound/NotFoundPage';
 import { createRoot } from 'react-dom/client';
 
 
-
-
-// ReactDOM.render(
-//   <Router
-
-//     basename={basename}
-//   >
-//     <Routes>
-//     </Routes>
-//   </Router>,
-//   document.getElementById('root')
-// );
-
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 
