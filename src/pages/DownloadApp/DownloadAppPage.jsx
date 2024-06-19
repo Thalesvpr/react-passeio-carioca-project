@@ -8,7 +8,6 @@ import { LandingStyled } from "../Style";
 const DownloadAppPage = () => (
   <LandingStyled>
     <TranslationsProvider>
-      <Header />
       <div className="hero-dw" id="hero">
         <section id="baixeoapp">
         <BaixeAppSection/>

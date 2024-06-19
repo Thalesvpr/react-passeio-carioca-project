@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import DownloadAppPage from './pages/DownloadApp/DownloadAppPage';
@@ -12,7 +11,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename="/">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/download-app-link" element={<DownloadAppPage />} />
