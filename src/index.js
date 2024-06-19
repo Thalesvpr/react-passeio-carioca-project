@@ -5,8 +5,10 @@ import LandingPage from './pages/LandingPage';
 import DownloadAppPage from './pages/DownloadApp/DownloadAppPage';
 import NotFoundPage from './pages/PageNotFound/NotFoundPage';
 
+const basename = process.env.PUBLIC_URL || '/';
+
 ReactDOM.render(
-  <Router>
+  <Router basename={basename}>
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/download-app-link" element={<DownloadAppPage />} />
