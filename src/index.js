@@ -1,19 +1,18 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import DownloadAppPage from './pages/DownloadApp/DownloadAppPage';
+import NotFoundPage from './pages/PageNotFound/NotFoundPage';
 
-import React from "react";
-import { createRoot } from "react-dom/client";
-import { HashRouter, Route, Routes } from "react-router-dom";
+ReactDOM.render(
+  <Router>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/download-app-link" element={<DownloadAppPage />} />
+      <Route path="*" element={<NotFoundPage />} />
 
-import LandingPage from "./pages/LandingPage";
-
-const container = document.getElementById("root");
-const root = createRoot(container);
-
-root.render(
-  <React.StrictMode>
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage/>} />
-      </Routes>
-    </HashRouter>
-  </React.StrictMode>
+    </Routes>
+  </Router>,
+  document.getElementById('root')
 );

@@ -23,6 +23,7 @@ const LandingPage = () => (
     <TranslationsProvider>
       <Header />
       <div className="hero-dw" id="hero">
+        
         <HeroSection />
         <section id="baixeoapp">
         <BaixeAppSection/>
