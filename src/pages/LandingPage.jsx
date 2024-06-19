@@ -30,6 +30,7 @@ const LandingPage = () => (
         </section>
         <img className="prediohome" src={`${process.env.PUBLIC_URL}imagens/png/prediohome.png`}/>
       </div>
+      
       <section id="explore">
         <ExploreSection />
       </section>

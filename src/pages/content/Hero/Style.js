@@ -41,10 +41,12 @@ div.content-text{
 }
 .blackbirds{
     position: absolute;
-    width: 300px;
+    width: 400px;
     height: auto;
-
-    bottom: 0;
+    pointer-events: none;
+    opacity: 50%;
+    left: 25%;
+    bottom: -90px;
 
 }
 `

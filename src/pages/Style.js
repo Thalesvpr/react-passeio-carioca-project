@@ -11,12 +11,14 @@ div.hero-dw{
 
 }
 .prediohome{
+    pointer-events: none;
     width: 400px;
     height: auto;
     position: absolute;
-
     bottom: 0;
 }
+
+
 
 
 `
