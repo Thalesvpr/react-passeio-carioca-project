@@ -66,7 +66,6 @@ export const Nav = styled.div`
   const [isNavOpen, setNavOpen] = useState(false);
   
   const scrollToSection = (sectionId) => {
-    console.log("entrou")
   const section = document.getElementById(sectionId);
     console.log(section)
     if (section) {
