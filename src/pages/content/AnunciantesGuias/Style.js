@@ -151,18 +151,19 @@ const AnunciantesGuiaSectionStyled = styled.article`
 
   .folhaslefta {
     pointer-events: none;
-    width: 600px;
+    width: 500px;
+    left: 0;
     height: auto;
     position: absolute;
     z-index: auto;
-    top: -550px;
-    transform: translateX(-70%);
+    top: -500px;
+    transform: translateX(-60%);
   }
 
   .folhasrighta {
     pointer-events: none;
     width: auto;
-    height: 600px;
+    height: 500px;
     position: absolute;
     z-index: auto;
     top: -600px;

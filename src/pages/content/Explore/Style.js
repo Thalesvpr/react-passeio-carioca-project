@@ -1,40 +1,43 @@
 import styled from "styled-components";
 
 const ExploreSectionStyled = styled.article`
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 
   .content-article {
-    
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    .article-text{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 
-      h1{
+    .article-text {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+
+      h1 {
         width: 300px;
         font-size: 2rem;
         font-weight: 600;
       }
-      p{
+
+      p {
         width: 400px;
-  
       }
     }
   }
 
   .content-cta {
-     position: relative;
+    position: relative;
   }
-  .badge{
+
+  .badge {
     width: 120px;
   }
+
   .cta-map {
     width: 290px;
     position: absolute;
@@ -51,92 +54,90 @@ height: 100%;
     height: 160px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;  
-    .box-content{
-      display:flex;
+    align-items: flex-end;
+
+    .box-content {
+      display: flex;
       flex-direction: column;
       width: 100%;
       height: 100%;
-      
       align-items: flex-end;
       justify-content: space-around;
-      h2{
-      color: var(--neutral);
-      font-weight: 300;
-      width: 200px;
-    }
-    }
-  
-  }
-  @media (max-width: 480px) {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 0;
-    padding-top: 60px;
-    .content-article {
-    padding: 20px;
-    /* width: 100%; */
-    /* width: 50vw; */
 
-    flex-direction: column;
-    
-    
-    .article-text{
-      /* background-color: green; */
-      gap: 40px;
-
-      h1{
-        /* width: 300px; */
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-      p{
+      h2 {
+        color: var(--neutral);
+        font-weight: 300;
         width: 200px;
-        font-size: 0.8rem;
-  
       }
     }
   }
 
-  .content-cta {
-     position: relative;
-  }
-  .badge{
-    width: 120px;
-  }
-  .cta-map {
-    width: 200px;
-    position: absolute;
-    left: 60px;
-    bottom: -100px;
-  }
+  @media (max-width: 768px) {
+    flex-direction: column;
 
-  .cta-box {
-    margin-top: 100px;
-    background-color: var(--primaria);
-    border-radius: 20px;
-    width: 200px;
-    height: 160px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;  
-    padding: 50px;
-    .box-content{
-      display:flex;
-      flex-direction: column;
-      width: 260px;
-      height: 100%;
-      justify-content: space-between;
-      h2{
-      color: var(--neutral);
-      font-weight: 300;
-      width: 200px;
+    .content-article {
+      margin-bottom: 20px;
+      align-items: center;
+
+      .article-text {
+        h1 {
+          width: 100%; /* Para ocupar toda a largura disponível */
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        p {
+          width: 100%; /* Para ocupar toda a largura disponível */
+          font-size: 0.9rem;
+          text-align: center;
+        }
+      }
+
+      .badge {
+        width: 80px;
+      }
     }
+
+    .content-cta {
+      text-align: center;
+
+      .cta-map {
+        width: 250px;
+        margin-bottom: 20px;
+        left: auto;
+        bottom: auto;
+      }
+
+      .cta-box {
+        max-width: 300px;
+      }
     }
-  }}
+  }
 
-`
+  @media (max-width: 480px) {
+    padding: 20px;
 
-export { ExploreSectionStyled }
+    .content-article {
+      .article-text {
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .content-cta {
+      .cta-map {
+        width: 180px;
+        margin-bottom: 20px;
+      }
+
+      .cta-box {
+        max-width: 250px;
+      }
+    }
+  }
+`;
+
+export { ExploreSectionStyled };

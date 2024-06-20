@@ -21,7 +21,7 @@ import GuiasSection from "./content/GuiasdeTurismo/Guias";
 const LandingPage = () => (
   <LandingStyled>
     <TranslationsProvider>
-      <Header />
+      { <Header /> }
       <div className="hero-dw" id="hero">
 
         <HeroSection />
@@ -31,23 +31,23 @@ const LandingPage = () => (
         <img className="prediohome" src={`${process.env.PUBLIC_URL}imagens/png/prediohome.png`}/>
       </div>
 
-      <section id="explore">
+       { <section id="explore">
         <ExploreSection />
-      </section>
-      {/* <section id="gameficacao">
+      </section> }
+     {/* { <section id="gameficacao">
         <GameficacaoSection />
-      </section> */}
+      </section> }   */}
       <GuiasSection></GuiasSection>
       <section id="anunciantes">
         <AnunciantesGuiaSection />
       </section>
-      {/* <section id="passeios">
+       {/* { <section id="passeios">
         <PasseiosSection />
-      </section> */}
-      {/* <section id="faleconosco">
+      </section> }  */}
+       { <section id="faleconosco">
         <ContatoSection />
-      </section> */}
-      {/* <Footer /> */}
+      </section> }  
+       { <Footer /> } 
     </TranslationsProvider>
   </LandingStyled>
 );

@@ -209,8 +209,8 @@ const AnunciantesSection = () => {
               
             </PlanosCarousel>
           </div>
-        <img className="folhaslefta" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
-        <img className="folhasrighta" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/>
+        {/* <img className="folhaslefta" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
+        <img className="folhasrighta" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/> */}
         </div>
         <img className="predioright" src={`${process.env.PUBLIC_URL}imagens/png/predioright.png`}/>
         <img className="predioleft" src={`${process.env.PUBLIC_URL}imagens/png/predioleft (1).png`}/>
