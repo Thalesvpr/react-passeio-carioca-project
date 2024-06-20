@@ -7,6 +7,9 @@ const FooterStyled = styled.article`
 
   div.content-socials {
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   div.nav {
@@ -109,7 +112,7 @@ const FooterStyled = styled.article`
 
     div.socials-links {
       margin: 5px;
-      gap: 5px;
+      gap: 20px;
     }
 
     div.content-marcadagua {
@@ -127,6 +130,11 @@ const FooterStyled = styled.article`
     .content-downloadlogo{
         align-items: center;
         text-align: center;
+    }
+    div.content-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
   }
 `;

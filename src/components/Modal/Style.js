@@ -5,7 +5,7 @@ const ModalStyled = styled.div`
   width: 100vw;
   height: 100vh;
   position: fixed;
-  z-index: 20;
+  z-index: 9999;
   top: 0;
   display: flex;
   justify-content: center;
@@ -40,6 +40,18 @@ const ModalStyled = styled.div`
         background-color: rgba(76,145,164,0.21);
     }
   }
+  
+  @media (max-width: 480px){
+    z-index: 9999;
+    .modal{
+      margin: ${(props) => props.side || '50px'};
+      height: 90%;
+    }
+    .close {
+      right:10px;
+    
+    }
+}
 `;
 
 export default ModalStyled;

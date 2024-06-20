@@ -47,6 +47,7 @@ export const Nav = styled.div`
   padding-block: 15px;
   border-radius: 20px;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
   @media (max-width: 768px) {
     display: ${({ isNavOpen }) => isNavOpen ? 'flex' : 'none'};
     flex-direction: column;
@@ -54,10 +55,10 @@ export const Nav = styled.div`
     gap: 20px;
     position: absolute;
     right: 25px;
-    bottom: -200px; 
+    top: 130px;
   }
   display: flex;
-  gap: 20px;
+  gap: 10px;
 `;
 
   const Header = () => {

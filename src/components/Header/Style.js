@@ -6,7 +6,7 @@ const HeaderStyled = styled.article`
     width: 100%;
     /* background-color: green; */
     position: fixed;
-    z-index: 10;
+    z-index: 999;
     color: var(--neutral);
     
     div.content{

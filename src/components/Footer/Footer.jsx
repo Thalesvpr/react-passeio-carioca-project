@@ -99,21 +99,21 @@ const stopPropagation = (event) => {
           <div className="content-socials">
             <div className="socials-links">
               <div className="boxlinksI">
-              <SlSocialInstagram size={"30px"}/>
+              <SlSocialInstagram size={"20px"}/>
               </div>
-              <a className="link" href="https://www.instagram.com/riocasaseprediosantigos?igsh=eWU0eHJmcThlNmkw" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a className="link" href="https://www.instagram.com/riocasaseprediosantigos?igsh=eWU0eHJmcThlNmkw" target="_blank" rel="noopener noreferrer"><u>Instagram</u></a>
             </div>
             <div className="socials-links">
               <div className="boxlinksF">
-                <FaFacebook size={"30px"} />
+                <FaFacebook size={"20px"} />
               </div>
-              <a className="link" href="https://www.facebook.com/RioCasasePrediosAntigos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a className="link" href="https://www.facebook.com/RioCasasePrediosAntigos?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"><u>Facebook</u></a>
             </div>
             <div className="socials-links">
               <div className="boxlinksF">
-                <FaWhatsapp  size={"30px"} />
+                <FaWhatsapp  size={"20px"} />
               </div>
-              <a className="link" href="https://wa.me/5521979240870" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+              <a className="link" href="https://wa.me/5521979240870" target="_blank" rel="noopener noreferrer"><u>WhatsApp</u></a>
             </div>
           </div>
         </div>

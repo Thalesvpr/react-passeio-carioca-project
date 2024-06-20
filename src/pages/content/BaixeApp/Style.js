@@ -86,6 +86,7 @@ const BaixeAppSectionStyled = styled.article`
       gap: 30px;
       align-items: center;
       padding: 0 10px;
+      z-index: 10;
 
       .content-text,
       p {
@@ -106,9 +107,12 @@ const BaixeAppSectionStyled = styled.article`
 
       .content-plataform {
         flex-direction: row;
-        gap: 20px;
+        gap: 30px;
         width: 100%;
-        justify-content: space-around;
+        
+      }
+      .prediohome {
+        z-index: 0;
       }
 
       .content-cta {
