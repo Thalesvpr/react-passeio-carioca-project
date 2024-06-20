@@ -37,10 +37,10 @@ const LandingPage = () => (
       {/* <section id="gameficacao">
         <GameficacaoSection />
       </section> */}
-      {/* <GuiasSection></GuiasSection> */}
-      {/* <section id="anunciantes">
+      <GuiasSection></GuiasSection>
+      <section id="anunciantes">
         <AnunciantesGuiaSection />
-      </section> */}
+      </section>
       {/* <section id="passeios">
         <PasseiosSection />
       </section> */}

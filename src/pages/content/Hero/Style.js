@@ -55,6 +55,7 @@ const HeroSectionStyled = styled.article`
   }
 
   @media (max-width: 480px) {
+    
   align-items: center;
   flex-direction: column;
   justify-content: space-around;

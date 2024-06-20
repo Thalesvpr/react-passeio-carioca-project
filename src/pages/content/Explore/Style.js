@@ -2,10 +2,8 @@ import styled from "styled-components";
 
 const ExploreSectionStyled = styled.article`
 display: flex;
-justify-content: space-between;
-padding-inline: 100px;
+justify-content: space-around;
 align-items: center;
-width: 100vw;
 height: 100%;
 
   .content-article {
@@ -47,19 +45,21 @@ height: 100%;
   .cta-box {
     margin-top: 100px;
     background-color: var(--primaria);
+    padding: 50px;
     border-radius: 20px;
     width: 600px;
     height: 160px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;  
-    padding: 50px;
     .box-content{
       display:flex;
       flex-direction: column;
-      width: 260px;
+      width: 100%;
       height: 100%;
-      justify-content: space-between;
+      
+      align-items: flex-end;
+      justify-content: space-around;
       h2{
       color: var(--neutral);
       font-weight: 300;
