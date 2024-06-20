@@ -1,20 +1,32 @@
+import { useNavigate } from "react-router-dom";
+import { PrimaryButton } from "../../components/Button/Button";
 import Header from "../../components/Header/Header";
 import { TranslationsProvider } from "../../context/TranslationContext";
 import BaixeAppSection from "../content/BaixeApp/BaixeApp";
 import HeroSection from "../content/Hero/Hero";
-import { LandingStyled } from "../Style";
+import { DownloadAppStyled } from "./Style";
 
 
-const DownloadAppPage = () => (
-  <LandingStyled>
+const DownloadAppPage = () => {
+  const navigate = useNavigate();
+
+  const navigateTo = (path) => {
+      navigate(path);
+      
+  };
+  return (
+  <DownloadAppStyled>
     <TranslationsProvider>
-      <div className="hero-dw" id="hero">
         <section id="baixeoapp">
+      <div className="hero-dw" id="hero">
         <BaixeAppSection/>
-        </section>
+  
       </div>
+      <PrimaryButton onClick={() => navigateTo("/")}>Voltar pra Home</PrimaryButton>
+        </section>
+
     </TranslationsProvider>
-  </LandingStyled>
-);
+  </DownloadAppStyled>)}
+
 
 export default DownloadAppPage;

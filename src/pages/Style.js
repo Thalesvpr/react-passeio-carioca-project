@@ -2,6 +2,19 @@ import styled from "styled-components";
 
 const LandingStyled = styled.article`
   /* overflow: hidden; */
+  .wave-up, .wave-down{
+    padding:0;
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px;
+  }
+  .wave-down{
+    transform:
+     rotate(
+      180deg
+     )
+
+  }
   div.hero-dw {
     background-color: #5ea7c6;
     background-size: cover;
@@ -14,6 +27,7 @@ const LandingStyled = styled.article`
     gap: 20px; */
     
 
+    
 
     @media (max-width: 768px) {
       border-radius: 0px 0px 50px 50px;

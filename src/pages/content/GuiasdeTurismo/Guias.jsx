@@ -68,7 +68,7 @@ const GuiasSection = () => {
           {texts.titulo}
         </h1>
         <div className="Guias">
-        <img className="folhasright" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/>
+        {/* <img className="folhasright" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/> */}
           <h1 className="G1">{texts.subtitulo}</h1>
           <p>{texts.explore}</p>
           <p>{texts.encontreGuias}</p>
@@ -80,7 +80,7 @@ const GuiasSection = () => {
             {texts.cta}
           </NeutralButton>
           </a>
-        <img className="folhasleft" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
+        {/* <img className="folhasleft" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/> */}
         
           </div>
         </div>

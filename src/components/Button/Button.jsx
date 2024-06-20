@@ -40,7 +40,7 @@ export const NeutralButton = (props) => {
 export const PrimaryButton = (props) => {
   return (
     <PrimaryButtonStyled>
-      <button>{props.children}</button>
+      <button onClick={props.onClick}>{props.children}</button>
     </PrimaryButtonStyled>
   );
 };

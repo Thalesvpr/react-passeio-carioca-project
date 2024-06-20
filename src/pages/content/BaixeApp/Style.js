@@ -87,6 +87,8 @@ const BaixeAppSectionStyled = styled.article`
       align-items: center;
       padding: 0 10px;
       z-index: 10;
+    justify-content: center;
+
 
       .content-text,
       p {
@@ -120,9 +122,10 @@ const BaixeAppSectionStyled = styled.article`
         width: 100%;
 
         .cta-download {
-          flex-direction: row;
+          flex-direction: column;
           gap: 15px;
-          justify-content: space-around;
+          justify-content: center;
+          align-items: center;
           width: 100%;
 
           .download-item {

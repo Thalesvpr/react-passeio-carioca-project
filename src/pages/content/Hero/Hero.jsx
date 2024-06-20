@@ -43,6 +43,17 @@ export const HeroSection = () => {
   
 
   const texts = translations[locale];
+
+    
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+      console.log(section)
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        console.log("correto")
+        
+      }
+    };
   
   return (
     <SectionBase>
@@ -59,7 +70,8 @@ export const HeroSection = () => {
           <h1 dangerouslySetInnerHTML={{ __html: texts.heroSubtitle }}></h1>
         </div>
         <div className="content-cta">
-          <NeutralButton>
+            
+          <NeutralButton onClick={() => scrollToSection('baixeoapp')}>
             {texts.ctaButton}
           </NeutralButton>
         </div>
