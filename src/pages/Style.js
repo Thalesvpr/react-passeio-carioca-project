@@ -33,7 +33,9 @@ const LandingStyled = styled.article`
     bottom: 0;
     left: 0;
 
-.folhasleft {
+
+
+    .folhasleft {
     pointer-events: none;
     width: 700px;
     height: auto;
@@ -49,7 +51,7 @@ const LandingStyled = styled.article`
     height: 700px;
     position: absolute;
     z-index: auto;
-    top: -500px;
+    top: -600px;
     right: 0;
     transform: translateX(60%);
 }
@@ -64,13 +66,12 @@ const LandingStyled = styled.article`
     height: auto;
     position: absolute;
     z-index: auto;
-    top: -550px;
+    top: -150px;
     transform: translateX(-60%);
 }
 }
 
-
-
+    
 
 
     @media (max-width: 768px) {

@@ -28,22 +28,21 @@ const LandingPage = () => (
         <section id="baixeoapp">
         <BaixeAppSection/>
         </section>
-        <img className="prediohome" src={`${process.env.PUBLIC_URL}imagens/png/prediohome.png`}/>
+        <img className="prediohome" src={`${process.env.PUBLIC_URL}imagens/png/prediohome.png`}/>   
       </div>
-
        { <section id="explore">
         <ExploreSection />
       </section> }
-     {/* { <section id="gameficacao">
+      { <section id="gameficacao">
         <GameficacaoSection />
-      </section> }   */}
+      </section> }   
       <GuiasSection></GuiasSection>
       <section id="anunciantes">
         <AnunciantesGuiaSection />
       </section>
-       {/* { <section id="passeios">
+        { <section id="passeios">
         <PasseiosSection />
-      </section> }  */}
+      </section> }  
        { <section id="faleconosco">
         <ContatoSection />
       </section> }  

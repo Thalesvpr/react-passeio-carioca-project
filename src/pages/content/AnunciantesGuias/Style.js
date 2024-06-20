@@ -171,15 +171,16 @@ const AnunciantesGuiaSectionStyled = styled.article`
     transform: translateX(70%);
   }
 
-  .cordas{
-    pointer-events: none;
-    width: 500px;
-    left: 0;
-    height: auto;
+  .cordas {
     position: absolute;
-    z-index: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%; 
+    height: auto;
     top: -500px;
-  
+    pointer-events: none;
+   
+   
   }
   
 
@@ -203,6 +204,8 @@ const AnunciantesGuiaSectionStyled = styled.article`
     .folhasrighta {
       display: none;
     }
+   
+
 
     .plan-section {
       width: 100%;

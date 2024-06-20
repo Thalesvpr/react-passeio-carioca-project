@@ -63,6 +63,7 @@ const ExploreSection = () => {
                     </div>
                 </div>
             </div>
+            
 
         </ExploreSectionStyled>
     </SectionBase>

@@ -45,9 +45,6 @@ export const GuiasSectionStyled = styled.div`
    
   }
 
-  .modal-open {
-    overflow: hidden;
-  }
 
   @media (max-width: 480px) {
     .Guias {

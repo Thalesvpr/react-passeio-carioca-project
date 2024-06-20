@@ -211,12 +211,12 @@ const AnunciantesSection = () => {
           </div>
         <img className="folhaslefta" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
         <img className="folhasrighta" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/>
-        <img className="cordas" src={`${process.env.PUBLIC_URL}imagens/png/Camada_1 (2).png`}/>
+        <img className="cordas" src={`${process.env.PUBLIC_URL}imagens/png/Camada_1 (3).png`}/>
         </div>
-      
-        <img className="predioright" src={`${process.env.PUBLIC_URL}imagens/png/predioright.png`}/>
-        <img className="predioleft" src={`${process.env.PUBLIC_URL}imagens/png/predioleft (1).png`}/>
 
+        <img className="predioright" src={`${process.env.PUBLIC_URL}imagens/png/predioright.png`}/> 
+        <img className="predioleft" src={`${process.env.PUBLIC_URL}imagens/png/predioleft (1).png`}/>
+    
       </AnunciantesGuiaSectionStyled>
     </SectionBase>
   );
