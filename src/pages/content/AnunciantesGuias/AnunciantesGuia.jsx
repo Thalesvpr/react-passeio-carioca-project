@@ -211,7 +211,7 @@ const AnunciantesSection = () => {
           </div>
         <img className="folhaslefta" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
         <img className="folhasrighta" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/>
-        <img className="cordas" src={`${process.env.PUBLIC_URL}imagens/png/Camada (2).png`}/>
+        <img className="cordas" src={`${process.env.PUBLIC_URL}imagens/png/Camada_1 (2).png`}/>
         </div>
       
         <img className="predioright" src={`${process.env.PUBLIC_URL}imagens/png/predioright.png`}/>
