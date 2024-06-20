@@ -20,9 +20,6 @@ const HeaderStyled = styled.article`
             display: flex;
             align-items: center;
             gap: 20px;
-            @media (max-width: 768px) {
-                flex-direction: column;
-            }
             
             h1{
                 font-size: 1.5rem;

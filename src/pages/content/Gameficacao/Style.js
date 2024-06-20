@@ -53,11 +53,13 @@ div.section-gameficacao{
     div.gameficacao-text{
         
     }
-
-
-
-
+    
+    
+    
+    
+    
 } 
+
 }
 `
 

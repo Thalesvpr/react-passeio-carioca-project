@@ -30,24 +30,24 @@ const LandingPage = () => (
         </section>
         <img className="prediohome" src={`${process.env.PUBLIC_URL}imagens/png/prediohome.png`}/>
       </div>
-      
+
       <section id="explore">
         <ExploreSection />
       </section>
-      <section id="gameficacao">
+      {/* <section id="gameficacao">
         <GameficacaoSection />
-      </section>
-      <GuiasSection></GuiasSection>
-      <section id="anunciantes">
+      </section> */}
+      {/* <GuiasSection></GuiasSection> */}
+      {/* <section id="anunciantes">
         <AnunciantesGuiaSection />
-      </section>
-      <section id="passeios">
+      </section> */}
+      {/* <section id="passeios">
         <PasseiosSection />
-      </section>
-      <section id="faleconosco">
+      </section> */}
+      {/* <section id="faleconosco">
         <ContatoSection />
-      </section>
-      <Footer />
+      </section> */}
+      {/* <Footer /> */}
     </TranslationsProvider>
   </LandingStyled>
 );

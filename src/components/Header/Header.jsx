@@ -10,7 +10,7 @@ import { TranslationsContext } from "../../context/TranslationContext";
 
 export const ContentLogo = styled.div`
 @media (max-width: 768px) {
-    display: block; 
+  
   }
 `
 
