@@ -4,16 +4,18 @@ const bg = `${process.env.PUBLIC_URL}/imagens/png/bg-anunciantes.png`;
 
 const AnunciantesGuiaSectionStyled = styled.article`
   height: 100%;
-
-
+  
+  
   h1.title {
     font-size: 2rem;
     font-weight: 500;
   }
-
-
-
+  
+  
+  
   div.Anunciantes {
+    overflow: hidden;
+
     justify-content: center;
     align-items: center;
     width: 100%;
