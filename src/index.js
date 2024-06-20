@@ -17,7 +17,7 @@ root.render(
         <Route path="/download-app-link" element={<DownloadAppPage />} />
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/not-found" element={<NotFoundPage />} />
-
+        
       </Routes>
     </HashRouter>
   </React.StrictMode>
