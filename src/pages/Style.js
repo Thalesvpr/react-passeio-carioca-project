@@ -18,6 +18,45 @@ div.hero-dw{
     bottom: 0;
 }
 
+.folhasleft {
+    pointer-events: none;
+    width: 700px;
+    height: auto;
+    position: absolute;
+    z-index: auto;
+    top: -550px;
+    transform: translateX(-60%);
+}
+
+.folhasright {
+    pointer-events: none;
+    width: auto;
+    height: 700px;
+    position: absolute;
+    z-index: auto;
+    top: -500px;
+    right: 0;
+    transform: translateX(60%);
+}
+
+
+#explore {
+    position: relative;
+
+    .folhasleft {
+    pointer-events: none;
+    width: 700px;
+    height: auto;
+    position: absolute;
+    z-index: auto;
+    top: -550px;
+    transform: translateX(-60%);
+}
+}
+
+
+
+
 
 
 
