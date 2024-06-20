@@ -42,8 +42,11 @@ body,html {
   background-color: var(--background);
   position: relative;
 
-}
 
+}
+html{
+
+}
 *{
   margin: 0;
   font-family: "Poppins", sans-serif;

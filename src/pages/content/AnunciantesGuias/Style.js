@@ -149,27 +149,7 @@ const AnunciantesGuiaSectionStyled = styled.article`
     opacity: 60%;
   }
 
-  .folhaslefta {
-    pointer-events: none;
-    width: 500px;
-    left: 0;
-    height: auto;
-    position: absolute;
-    z-index: auto;
-    top: -500px;
-    transform: translateX(-60%);
-  }
-
-  .folhasrighta {
-    pointer-events: none;
-    width: auto;
-    height: 500px;
-    position: absolute;
-    z-index: auto;
-    top: -600px;
-    right: 0;
-    transform: translateX(70%);
-  }
+ 
 
   .cordas {
     position: absolute;
@@ -187,14 +167,14 @@ const AnunciantesGuiaSectionStyled = styled.article`
   @media (max-width: 480px) {
     div.Anunciantes {
       flex-direction: column-reverse;
+      gap: 10px;
     }
 
     .texts {
-      display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      gap: 20px;
+      gap: 10px;
       width: 100%;
     }
 
@@ -220,9 +200,6 @@ const AnunciantesGuiaSectionStyled = styled.article`
       width: 100%;
     }
 
-    .texts {
-      width: 100%;
-    }
   }
 `;
 

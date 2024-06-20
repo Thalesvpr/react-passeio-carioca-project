@@ -68,9 +68,11 @@ const GuiasSection = () => {
           {texts.titulo}
         </h1>
         <div className="Guias">
+        <img className="folhasright" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/>
           <h1 className="G1">{texts.subtitulo}</h1>
           <p>{texts.explore}</p>
           <p>{texts.encontreGuias}</p>
+
           <div className="whats">
             <a href="https://wa.me//5521979240870?text=Ol%C3%A1%2C%20gostaria%20de%20se%20tornar%20um%20Guia%20de%20Turismo%20e%20mostrar%20%C3%A0%20todos%20a%20beleza%20do%20Rio%3F%3F
 " target="_blanke">
@@ -78,8 +80,11 @@ const GuiasSection = () => {
             {texts.cta}
           </NeutralButton>
           </a>
+        <img className="folhasleft" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
+        
           </div>
         </div>
+      
       </GuiasSectionStyled>
     </SectionBase>
   );

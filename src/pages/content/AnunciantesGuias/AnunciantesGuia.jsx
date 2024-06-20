@@ -209,8 +209,7 @@ const AnunciantesSection = () => {
               
             </PlanosCarousel>
           </div>
-        <img className="folhaslefta" src={`${process.env.PUBLIC_URL}imagens/png/leavesleft.png`}/>
-        <img className="folhasrighta" src={`${process.env.PUBLIC_URL}imagens/png/leavesright.png`}/>
+     
         <img className="cordas" src={`${process.env.PUBLIC_URL}imagens/png/Camada_1 (3).png`}/>
         </div>
 

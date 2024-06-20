@@ -185,6 +185,12 @@ const PlanosCarousel = () => {
 };
 
 const CarouselContainer = styled.div`
+@media (max-width: 480px) {
+    width: 350px ;
+    margin-top: 35px;
+  
+  }
+
   position: relative;
   width: 100%;
   max-width: 458px;
@@ -197,6 +203,7 @@ const CarouselContainer = styled.div`
 const CarouselSlide = styled.div`
   background-color: 
   #6FB5D2;
+  
   padding: 20px;
   border-radius: 29px;
   height: auto;
@@ -245,6 +252,7 @@ const NavButton = styled(IconButton)`
 
   @media (max-width: 480px) {
     display: none; 
+
   }
 `;
 
