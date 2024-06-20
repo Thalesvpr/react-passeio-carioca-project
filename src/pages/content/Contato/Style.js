@@ -69,7 +69,7 @@ const ContatoSectionStyled = styled.article`
 
     div.content-form {
       width: 100%;
-      padding: 0 20px; /* Ajuste de padding para melhor adaptação */
+      padding: 0 20px; 
     }
   }
 
