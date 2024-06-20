@@ -171,6 +171,18 @@ const AnunciantesGuiaSectionStyled = styled.article`
     transform: translateX(70%);
   }
 
+  .cordas{
+    pointer-events: none;
+    width: 500px;
+    left: 0;
+    height: auto;
+    position: absolute;
+    z-index: auto;
+    top: -500px;
+  
+  }
+  
+
   @media (max-width: 480px) {
     div.Anunciantes {
       flex-direction: column-reverse;
